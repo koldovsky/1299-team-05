@@ -28,6 +28,8 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 <a href="https://notareallink" data-proofer-ignore>Not checked.</a>
 ```
 # TEAM
- <p>Taras Noha</p>
- <p>Yurii Davydiuk</p>
- <p>Nataliia Tyshyk</p>
+ <ul>
+    <li>Taras Noha</li>
+    <li>Yurii Davydiuk</li>
+    <li>Nataliia Tyshyk</li>
+ </ul>  
