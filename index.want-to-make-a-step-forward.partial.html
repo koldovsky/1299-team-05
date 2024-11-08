@@ -1,21 +1,56 @@
-<section class="Want__forma">
-<div>
-        <h2>Want to make a step forward?</h2>
-        <p>Complete the form below and tell us a bit about your business!</p>
-        <form action="#" method="post">
-            <label for="name">Name*</label><br>
-            <input type="text" id="name" name="name" required><br><br>
-            
-            <label for="phone">Phone number*</label><br>
-            <input type="tel" id="phone" name="phone" required><br><br>
-            
-            <label for="email">Email*</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-            
-            <label for="message">Your message</label><br>
-            <textarea id="message" name="message" rows="4"></textarea><br><br>
-            
-            <button type="submit">Request a Quote</button>
-        </form>
-    </div>
+<section class="contact-form">
+  <div class="contact-form__container">
+    <h2 class="contact-form__title">Want to make a step forward?</h2>
+    <p class="contact-form__description">
+      Complete the form below and tell us a bit about your business!
+    </p>
+    <form class="contact-form__form" action="#" method="post">
+      <div class="contact-form__field">
+        <label for="name" class="contact-form__label">Name*</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          class="contact-form__input"
+          required
+        />
+      </div>
+
+      <div class="contact-form__field">
+        <label for="phone" class="contact-form__label">Phone number*</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          class="contact-form__input"
+          required
+        />
+      </div>
+
+      <div class="contact-form__field">
+        <label for="email" class="contact-form__label">Email*</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          class="contact-form__input"
+          required
+        />
+      </div>
+
+      <div class="contact-form__field">
+        <label for="message" class="contact-form__label">Your message</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          class="contact-form__textarea"
+        ></textarea>
+      </div>
+
+      <button type="submit" class="contact-form__button">
+        Request a Quote
+      </button>
+    </form>
+  </div>
 </section>
