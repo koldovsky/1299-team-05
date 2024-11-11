@@ -1,0 +1,17 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    scroll-behavior: smooth;
+    font-family: "DotGothic16", sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
