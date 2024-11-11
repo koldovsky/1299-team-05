@@ -2,7 +2,7 @@
   display: flex;
   text-align: left;
   align-items: center;
-  padding: 20px;
+  padding: 95px;
   background-image: url("../img/background/about-mdx-company-backgraund.png");
 }
 
@@ -11,10 +11,10 @@
 }
 
 .about__img img {
-  -webkit-flex-basis: 30%;
-  -ms-flex-preferred-size: 30%;
-  flex-basis: 30%;
-  max-width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
 }
 
 .about__title {
