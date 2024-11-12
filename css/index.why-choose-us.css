@@ -1,96 +1,47 @@
 .why-choose-us {
-  background-image:
-    url(../img/background/why-choose-us-background.png);
-  background-size: cover;
+  background-image: url(../img/background/why-choose-us-background.png);
   padding: 90px 0px 100px;
 }
 
 .why-choose-us__inner {
-  padding: 0 40px;
-  margin: 0 34.4px;
+  padding: 40px 40px;
 }
 
-.why-choose-us-header {
-  padding: 0 15px;
+.why-choose-us__header {
+  text-align: center;
+  margin: 50px 0px 0px;
+  padding: 0px 15px;
+  font-size: inherit;
+}
+
+img {
+  display: inline-block;
 }
 
 .why-choose-us__title {
-  color: #4A4A4D;
-  text-align: center;
-  font-size: 50px;
+  font-size: 3.12rem;
 }
 
 .why-choose-us__dot {
-  color: #8C7568
-}
-
-.why-choose-us__icon {
-  display: flex;
-  align-items: center;
+  color: #8c7568;
 }
 
 .why-choose-us__description {
-  color: #4A4A4D;
+  margin-top: 15px;
+}
+
+.why-choose-us__description span {
+  display: block;
+  margin-top: 5px;
+  font-size: 1.25rem;
+}
+
+.why-choose-us__icon {
+  margin-top: 15px;
+  width: 598;
+  height: 32;
+}
+
+.why-choose-us__service {
   text-align: center;
-  display: flex;
-  font-size: 20px
 }
-
-.why-choose-us__services {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  background-color: #ffffff;
-}
-
-@media (min-width: 768px) {
-  .why-choose-us__services {
-    grid-template-columns: 1fr;
-
-  }
-
-  @media (min-width: 992px) {
-    .why-choose-us__services {
-      grid-template-columns: 1fr 1fr;
-    }
-  }
-
-  .why-choose-us__service {
-    background-color: #ffffff;
-    padding: 20px;
-    width: 30%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-
-  .why-choose-us__service-icon {
-    width: 50px;
-    height: auto;
-    margin-bottom: 15px;
-  }
-
-  .why-choose-us__service-title {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-  }
-
-  .why-choose-us__service-description {
-    font-size: 1em;
-    margin-bottom: 15px;
-  }
-
-  .why-choose-us__service-list {
-    list-style-type: disc;
-    padding-left: 20px;
-    text-align: left;
-  }
-
-  .why-choose-us__service-list-item {
-    margin-bottom: 5px;
-  }
-
-  @media (min-width: 600px) {
-    .why-choose-us__services {
-      grid-template-rows: 1fr 1fr;
-    }
-  }
