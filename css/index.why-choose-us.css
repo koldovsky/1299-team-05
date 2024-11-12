@@ -1,47 +1,80 @@
-.why-choose-us {
-  background-image: url(../img/background/why-choose-us-background.png);
+.choose-us {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.choose-us__block {
   padding: 90px 0px 100px;
 }
 
-.why-choose-us__inner {
-  padding: 40px 40px;
+.choose-us__header {
+  margin-bottom: 40px;
 }
 
-.why-choose-us__header {
+.choose-us__title {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.choose-us__icon {
   text-align: center;
-  margin: 50px 0px 0px;
-  padding: 0px 15px;
-  font-size: inherit;
 }
 
 img {
   display: inline-block;
 }
 
-.why-choose-us__title {
-  font-size: 3.12rem;
+.choose-us__description {
+  font-size: 1rem;
+  color: #666;
+  margin: 10px 0;
 }
 
-.why-choose-us__dot {
-  color: #8c7568;
+.choose-us__cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-.why-choose-us__description {
-  margin-top: 15px;
+.choose-us__card {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  text-align: left;
 }
 
-.why-choose-us__description span {
-  display: block;
-  margin-top: 5px;
+.choose-us__icon {
+  margin: 0 auto 20px;
+  width: 100px;
+  height: 100px;
+  text-align: left;
+}
+
+img {
+  display: inline-block;
+}
+
+.choose-us__card-title {
   font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
-.why-choose-us__icon {
-  margin-top: 15px;
-  width: 598;
-  height: 32;
+.choose-us__card-description {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 15px;
 }
 
-.why-choose-us__service {
-  text-align: center;
+.choose-us__list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.choose-us__list li {
+  font-size: 0.9rem;
+  color: #666;
 }
