@@ -3,7 +3,7 @@
     linear-gradient(#f9f9f9, #ffffff);
   background-size: cover;
   background-position: center;
-  padding: 95px;
+  padding: 100px;
 }
 
 .about-container {
@@ -59,7 +59,9 @@
 }*/
 
 .about-content {
-  max-width: 49%;
+  max-width: 100%;
+  padding: 30px 30px;
+  text-align: left; /* Вирівнюємо текст по лівому краю */
 }
 
 .about-content h2 {
@@ -92,8 +94,11 @@
   font-size: 16px;
   color: #7d7d8e;
   line-height: 1.6;
-  margin-bottom: 30px;
+  margin: 0; /* Відсутність зовнішніх відступів */
+  padding: 0; /* Відсутність внутрішніх відступів */
   font-family: "Open Sans", sans-serif;
+  width: 100%; /* Займає всю ширину контейнера */
+  text-align: left; /* Текст вирівняний по лівому краю */
 }
 
 .about-buttons {
@@ -153,34 +158,48 @@
   justify-content: center;
   align-items: center;
   gap: 15px;
-
-  svg.about__socials-icon {
-    display: block;
-    width: 25px;
-    border-radius: 50%;
-
-    .logo {
-      fill: #ffffff;
-    }
-  }
-
-  .about__socials-link {
-    transition: transform 0.3s ease;
-  }
-
-  .about__socials-link:hover svg.about__socials-icon {
-    fill: #8c7568;
-  }
+}
+.about__socials-link {
+  transition: fill 1.1s ease; /* Плавний перехід кольору */
 }
 
-.about__socials--colorone .about__socials-icon {
-  fill: #8c7568;
+.about__socials-link:hover svg.about__socials-icon {
+  fill: #8c7568; /* Змінюється колір при наведенні */
 }
 
-.about__socials--colorone .about__socials-icon {
-  fill: #8c7568;
+.about__socials-icon {
+  display: block;
+  width: 25px; /* Розмір іконки */
+  border-radius: 50%; /* Круглі іконки */
+  fill: #685347; /* Загальний колір для соціальних іконок цього типу */
 }
 
+.about__socials-icon .logo {
+  fill: #ffffff; /* Колір іконки по замовчуванню */
+}
+
+/* Для кожного кольору окремо */
 .about__socials--colorone .about__socials-icon {
-  fill: #8c7568;
+  fill: #685347; /* Загальний колір для соціальних іконок цього типу */
+}
+
+@media (max-width: 768px) {
+  .about__socials {
+    gap: 10px; /* Зменшуємо відстань між іконками на малих екранах */
+  }
+
+  .about__socials-icon {
+    width: 30px; /* Збільшуємо розмір іконок на малих екранах */
+  }
+}
+.about__socials-link--facebook .about__socials-icon {
+  fill: #8c7568; /* Колір Facebook */
+}
+
+.about__socials-link--insta .about__socials-icon {
+  fill: #8c7568; /* Колір Instagram */
+}
+
+.about__socials-link--youtube .about__socials-icon {
+  fill: #8c7568; /* Колір YouTube */
 }
