@@ -1,6 +1,9 @@
-.about {
+/*.about {
   display: flex;
-  padding: 95px;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  position: relative;
+  min-width: 320px;
   background-image: url("../img/background/about-mdx-company-backgraund.png");
 }
 
@@ -58,7 +61,7 @@
 .social-icons__icon_1W1 svg {
   width: 30px;
   height: 30px;
-  fill: currentColor; /* Використовує колір батьківського елементу */
+  fill: currentColor;
   cursor: pointer;
   position: relative;
   -webkit-box-orient: vertical;
@@ -74,7 +77,7 @@
   transition: background-color 0.3s ease;
 }
 
-/*кнопка Learn More */
+
 .about__button--learnmore {
   background-color: #ffffff;
   color: #8c7568;
@@ -88,7 +91,7 @@
   color: #ffffff;
 }
 
-/*кнопка Contact Us */
+
 .about__button--contact {
   background-color: #8c7568;
   color: #ffffff;
@@ -100,4 +103,102 @@
 .about__button--contact:hover {
   background-color: #343436;
   color: #ffffff;
+}
+*/
+.about-section {
+  padding: 95px;
+  background-image: url("../img/background/about-mdx-company-backgraund.png");
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-content {
+  max-width: 50%;
+}
+
+.about-content h2 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about__point {
+  color: #8c7568;
+}
+
+.about-description {
+  font-weight: bold;
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.social-links a {
+  font-size: 18px;
+  color: #333;
+}
+
+.about-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.about__button {
+  padding: 15px 25px; /* Вищі кнопки */
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.about__button--learnmore {
+  background-color: #ffffff;
+  color: #8c7568;
+  border: 1px solid #8c7568;
+  border-radius: 0;
+}
+
+.about__button--learnmore:hover {
+  background-color: #8c7568;
+  color: #ffffff;
+}
+
+.about__button--contact {
+  background-color: #8c7568;
+  color: #ffffff;
+  border: 1px solid #8c7568;
+  border-radius: 0;
+}
+
+.about__button--contact:hover {
+  background-color: #343436;
+  color: #ffffff;
+}
+
+.about-image {
+  max-width: 20%;
+}
+
+.about-image img {
+  width: 100%;
 }

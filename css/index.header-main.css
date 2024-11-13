@@ -1,6 +1,9 @@
 .header {
     display: flex;
+    height: 160px;
     align-items: center;
+    text-align: center;
+    margin: auto;
     justify-content: space-between;
     padding: 20px;
     background-color: #333;
@@ -69,8 +72,9 @@
 .header__icon-item img {
     width: 24px;
     height: auto;
-    filter: brightness(0) invert(1); /* Робить іконки білими */
-    transition: filter 0.3s ease;
+    background-color: #333;
+ /*   filter: brightness(0) invert(1); */
+ /*   transition: filter 0.3s ease; */
 }
 
 .header__icon-item img:hover {
