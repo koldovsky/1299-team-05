@@ -19,17 +19,16 @@
   padding-left: 15px;
   padding-right: 15px;
   text-align: center;
+  align-items: center;
   display: flex;
   flex-direction: column;
   ;
 }
 
 .choose-us__icon {
-  text-align: center;
+  display: block;
   width: 65px;
   height: 15px;
-
-
 }
 
 .choose-us__title {
@@ -72,7 +71,7 @@
 
 .choose-us__card {
   background-color: #ffffff;
-  text-align: center;
+  text-align: left;
   padding: 20px;
   border-radius: 8px;
   max-width: auto;
