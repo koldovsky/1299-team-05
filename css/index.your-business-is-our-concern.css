@@ -1,15 +1,86 @@
+/* Основний контейнер */
 .index__yourbusiness-container {
-    background-color: #38383a;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: auto;
+    background-image: url("../img/background/ybioc_background.jpg");
+    height: 950px;
 }
 
+/* Лівий контейнер (текстовий блок) */
 .index__yourbusiness-container-left {
-    background-color: #38383a;
+    flex: 1;
+    max-width: 50%;
+    align-content: center;
+    vertical-align: baseline;
+    padding-left: 150px;
+    padding-right: 150px;
+    text-align: left;
 }
 
+/* Заголовок */
 .index__yourbusiness-title {
+    font-size: 63px;
     color: white;
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 
+/* Іконка під заголовком */
+.index__yourbusiness-icon {
+    height: 32px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+/* Опис */
 .index__yourbusiness-description {
+    font-size: 18px;
+    line-height: 1.6;
     color: white;
+    margin-bottom: 30px;
+}
+
+/* Кнопка */
+.index__yourbusiness-button--sendrequest {
+    width: 156px;
+    height: 55px;
+    padding: 12px 24px;
+    font-size: 15px;
+    color: #fff;
+    background-color: #8c7569;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.index__yourbusiness-button--sendrequest:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Правий контейнер (зображення) */
+.index__yourbusiness-container-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.index__yourbusiness-image {
+    max-width: 100%;
+}
+
+/* Адаптивність для мобільних */
+@media (max-width: 768px) {
+    .index__yourbusiness-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .index__yourbusiness-container-left, 
+    .index__yourbusiness-container-right {
+        max-width: 100%;
+    }
 }

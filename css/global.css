@@ -8,7 +8,12 @@
 
 :root {
     scroll-behavior: smooth;
-    font-family: "DotGothic16", sans-serif;
+    font-family: "Open sans", sans-serif;
+}
+
+html, body {
+    align-items: center;
+    margin: auto;
 }
 
 .container {
@@ -20,8 +25,3 @@ img {
     display: block;
 }
 
-.html {
-    max-width: 1200px;
-    margin: auto;
-    padding: 0;
-}
