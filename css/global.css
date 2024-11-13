@@ -12,6 +12,7 @@
 :root {
     scroll-behavior: smooth;
     font-family: "Roboto", sans-serif;
+    --title-color1:#4a4a4d;
 }
 
 .container {
