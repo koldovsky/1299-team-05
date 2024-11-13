@@ -1,6 +1,9 @@
 .about {
   display: flex;
-  padding: 95px;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  position: relative;
+  min-width: 320px;
   background-image: url("../img/background/about-mdx-company-backgraund.png");
 }
 
