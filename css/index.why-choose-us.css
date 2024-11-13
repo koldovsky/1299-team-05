@@ -29,13 +29,13 @@
   display: block;
   width: 65px;
   height: 15px;
+  margin-top: 20px;
 }
 
 .choose-us__title {
   font-size: 50px;
   font-weight: 900;
   color: #4a4a4d;
-
 }
 
 .choose-us__dot {
@@ -49,6 +49,7 @@
 .choose-us__description {
   font-size: 20px;
   font-weight: 500;
+  margin-top: 20px;
   color: #4a4a4d;
 }
 
@@ -75,13 +76,21 @@
   padding: 20px;
   border-radius: 8px;
   max-width: auto;
-  margin: 0 auto;
+  margin: 20px;
+}
+
+.choose-us__card-title {
+  margin-top: 20px;
 }
 
 .choose-us__icon-card {
   width: 100px;
   height: 100px;
-  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+.choose-us__card-description {
+  margin-top: 20px;
 }
 
 .choose-us__list {
@@ -93,7 +102,7 @@
 .choose-us__list-item {
   padding-left: 20px;
   position: relative;
-  margin-bottom: 8px;
+  margin-top: 20px;
 }
 
 .choose-us__list-item::before {
