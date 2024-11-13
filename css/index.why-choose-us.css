@@ -1,80 +1,104 @@
 .choose-us {
-  text-align: center;
-  padding: 40px 20px;
+  background-image: url(../img/background/why-choose-us-background.png);
+  background-size: auto;
+  background-position: static;
+  background-repeat: repeat;
+  padding-top: 90px;
+  padding-bottom: 100px;
 }
 
 .choose-us__block {
-  padding: 90px 0px 100px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 86px;
+  margin-right: 86px;
 }
 
 .choose-us__header {
-  margin-bottom: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  ;
+}
+
+
+
+.choose-us__icon {
+  display: inline-block;
+  height: auto;
 }
 
 .choose-us__title {
-  font-size: 2rem;
-  margin: 0;
+  font-size: 50px;
+  font-weight: 900;
+  color: #4a4a4d;
+
 }
 
-.choose-us__icon {
-  text-align: center;
-}
-
-img {
+.choose-us__dot {
+  font-size: 38px;
+  font-weight: 900;
+  border-radius: 50%;
   display: inline-block;
+  color: #8c7568;
 }
 
 .choose-us__description {
-  font-size: 1rem;
-  color: #666;
-  margin: 10px 0;
+  font-size: 20px;
+  font-weight: 500;
+  color: #4a4a4d;
 }
 
 .choose-us__cards {
-  display: flex;
-  justify-content: space-around;
-  gap: 20px;
-  flex-wrap: wrap;
+  display: grid;
+  gap: 20px
+}
+
+@media (min-width: 768px) {
+  .choose-us__cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .choose-us__cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .choose-us__card {
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  background-color: #ffffff;
+  text-align: center;
   padding: 20px;
-  width: 300px;
-  text-align: left;
+  border-radius: 8px;
+  max-width: auto;
+  margin: 0 auto;
 }
 
-.choose-us__icon {
-  margin: 0 auto 20px;
+.choose-us__icon-card {
   width: 100px;
   height: 100px;
-  text-align: left;
-}
-
-img {
-  display: inline-block;
-}
-
-.choose-us__card-title {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.choose-us__card-description {
-  font-size: 0.9rem;
-  color: #666;
   margin-bottom: 15px;
 }
 
 .choose-us__list {
-  list-style-type: disc;
-  padding-left: 20px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-.choose-us__list li {
-  font-size: 0.9rem;
-  color: #666;
+.choose-us__list-item {
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.choose-us__list-item::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #8c7568;
+  font-size: 18px;
 }
