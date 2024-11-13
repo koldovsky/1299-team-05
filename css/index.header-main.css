@@ -5,10 +5,8 @@
     text-align: center;
     margin: auto;
     justify-content: space-between;
-    padding: 20px;
+    padding: 20px, 150px, 20px, 150px;
     background-color: #333;
-    color: #fff;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Контейнер для зображення логотипу */
@@ -48,7 +46,7 @@
 }
 
 .header__nav-link:hover {
-    color: #ff9800; /* Колір при наведенні */
+    color: #8c7569; /* Колір при наведенні */
 }
 
 /* Контейнер для іконок соціальних мереж */
@@ -79,4 +77,15 @@
 
 .header__icon-item img:hover {
     filter: brightness(0.8) invert(0.9); /* Зміна кольору при наведенні */
+}
+
+
+svg.header__socials-icon {
+    display: block;
+    width: 35px;
+    border-radius: 50%;
+    fill: #8c7569;
+    .logo {
+        fill: #ffffff;
+    }
 }
