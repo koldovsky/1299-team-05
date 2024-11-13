@@ -1,7 +1,8 @@
 .choose-us {
   background-image: url(../img/background/why-choose-us-background.png);
   background-size: auto;
-  background-position: static;
+  background-position-y: center;
+  background-size: cover;
   background-repeat: repeat;
   padding-top: 90px;
   padding-bottom: 100px;
@@ -23,11 +24,12 @@
   ;
 }
 
-
-
 .choose-us__icon {
-  display: inline-block;
-  height: auto;
+  text-align: center;
+  width: 65px;
+  height: 15px;
+
+
 }
 
 .choose-us__title {
