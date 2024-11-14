@@ -1,0 +1,117 @@
+.subscribe {
+    background-image: url(../img/background/subscribe-now-background.png);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.subscribe__wrapper {
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+   
+.subscribe__form-left {
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  
+}
+
+.subscribe__form-right {
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.subscribe__form {
+  background-color: var(--white-color);
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  align-content: center;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  
+ 
+}
+
+.subscribe__title {
+  font-family: "Roboto", sans-serif;
+  color: var(--title-color1);
+  text-align: center;
+  align-content: center;
+  font-size: 50px;
+  font-weight: 900;
+} 
+
+.subscribe__dot {
+  font-family: "Roboto";
+  font-size: 50px;
+  font-weight: 900;
+  border-radius: 50%;
+  display: inline-block;
+  color: var(--dot-color);
+}
+
+.subscribe__img {
+  display: inline-block;
+  margin-top: 25px;
+}
+
+.subscribe__description {
+  margin-top: 25px;
+}
+
+.subscribe__form-container {
+  width: 100%;
+  height: 50px;
+  margin-top: 12px;
+}
+
+.subscribe__input-text {
+  background-color: var(--subscribe-input-text-color);
+  width: 100%;
+  height: 50px;
+  padding-left: 26px;
+  padding: 26px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 12px;
+  border: none
+}
+
+.subscribe__input-button {
+  font-family: "Roboto", sans-serif;
+  color: var(--white-color);
+  display: block; 
+  width: 450px;
+  height: 50px;
+  margin-top: 25px;
+  border: none;
+  background-color: var(--title-color1);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.subscribe__input-button:hover {
+  background-color: var(--dot-color);
+}
+
+@media (max-width: 992px) {
+  .subscribe__wrapper {
+    grid-template-columns: 1% 98% 1%;
+  }
