@@ -1,40 +1,34 @@
 /* Основний контейнер секції */
 .about-section {
-  display: flex; /* Використовуємо Flexbox */
-  justify-content: space-between; /* Простір між контейнерами */
-  align-items: stretch; /* Розтягуємо елементи по висоті */
+  display: grid; /* Використовуємо Grid */
+  grid-template-columns: 57% 43%; /* 7 рівних колонок для великих екранів */
   padding: 100px 0; /* Відступи зверху та знизу */
-  width: auto; /* Використовуємо всю ширину секції */
-  box-sizing: border-box; /* Враховуємо відступи в ширині */
+  width: 100%; /* Використовуємо всю ширину секції */
+  height: 756;
   background-image: url("../img/background/about-mdx-company-backgraund.png");
+  background-position: 50% 55%;
 }
 
 /* Контейнер для текстового контенту */
 .about-content {
-  flex: 0 0 50%; /* Займає 50% ширини секції */
-  padding: 0 15px; /* Відступи зліва і справа */
-  box-sizing: border-box; /* Враховуємо padding в ширині */
-  height: 100%; /* Займає всю висоту батьківського контейнера */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* Вирівнюємо контент по вертикалі */
-  background-color: #ffffff;
+  display: block;
+  width: 100%;
+  height: 100%;
+text-align: left;
+align-content: center;
+padding: 0 150px;
 }
 
 /* Контейнер для зображення */
 .about-image {
-  flex: 0 0 50%; /* Займає 50% ширини секції */
-  padding: 0 15px; /* Відступи зліва і справа */
-  box-sizing: border-box; /* Враховуємо padding в ширині */
-  height: 100%; /* Займає всю висоту батьківського контейнера */
-  display: flex;
-  justify-content: center; /* Центруємо по горизонталі */
-  align-items: center; /* Центруємо по вертикалі */
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .about-image img {
   width: 100%;
-  max-width: 300px;  /* Можна зменшити або збільшити в залежності від бажаного вигляду */
+  max-width: 300px; /* Можна зменшити або збільшити в залежності від бажаного вигляду */
   height: auto;
   object-fit: cover; /* або 'contain' для іншого вигляду */
 }
@@ -53,7 +47,6 @@
 
 .about__icon {
   margin-bottom: 20px;
-  align-self: flex-start; /* Це допоможе зафіксувати іконку ліворуч */
 }
 
 /* Опис і текст */
@@ -66,22 +59,18 @@
 
 /* Соціальні іконки */
 .about__socials {
-  display: flex; /* Використовуємо Flexbox для вирівнювання іконок в ряд */
-  gap: 5px; /* Відстань між іконками */
-  justify-content: flex-start; /* Вирівнюємо іконки по лівому краю */
-  margin-bottom: 20px; /* Відступ під іконками */
-  width: 135px; /* Ширина контейнера */
-  height: 45px; /* Висота контейнера */
+  display: flex;
+  gap: 5px;
+  margin-bottom: 10px; /* Зменшено відступ між іконками і кнопками */
+  width: 135px;
+  height: 45px;
 }
 
-svg.about__socials-icon {
+.about__socials-icon {
   display: block;
   width: 30px;
+  height: 30px; /* Оновлено для рівного вигляду */
   border-radius: 50%;
-
-  .logo {
-    fill: #ffffff;
-  }
 }
 
 .about__socials-link {
@@ -98,11 +87,10 @@ svg.about__socials-icon {
 
 /* Кнопки */
 .about-buttons {
-  display: flex; /* Використовуємо Flexbox для вирівнювання кнопок в ряд */
-  gap: 20px; /* Відстань між кнопками */
-  justify-content: flex-start; /* Центруємо кнопки по лівому краю */
-  margin-top: 20px; /* Відступ зверху для кнопок */
-  margin-bottom: 20px; /* Додаємо відступ внизу для кнопок */
+  display: flex;
+  gap: 20px;
+  margin-top: 10px; /* Зменшено відступ між іконками і кнопками */
+  margin-bottom: 20px;
 }
 
 .about__button {
@@ -143,15 +131,16 @@ svg.about__socials-icon {
   background-color: #343436;
   color: #ffffff;
 }
+
 /* Адаптивність для малих екранів */
 @media (max-width: 768px) {
   .about-section {
-    flex-direction: column; /* Стає вертикальним на малих екранах */
+    grid-template-columns: repeat(5, 1fr); /* 5 колонок для малих екранів */
     padding: 50px 20px; /* Відступи для маленьких екранів */
   }
   .about-content,
   .about-image {
-    flex: 1 0 100%; /* Кожен контейнер займає 100% ширини */
+    grid-column: span 5; /* Кожен елемент займає 5 колонок на малих екранах */
     padding: 0 15px; /* Менші відступи зліва та справа */
   }
 
