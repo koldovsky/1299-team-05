@@ -1,14 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 *,
 *::after,
 *::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline-style: none;
+    outline-color: #000000;
 }
 
 :root {
     scroll-behavior: smooth;
-    font-family: "DotGothic16", sans-serif;
+    font-family: "Roboto", sans-serif;
+    --title-color1:#4a4a4d;
+    --dot-color: #8c7568;
+    --white-color: #ffffff;
+    --choose-us-card-description-color: #7D7D7D;
+    --subscribe-input-text-color: #3434361F;
 }
 
 .container {
@@ -19,3 +29,4 @@
 img {
     display: block;
 }
+
