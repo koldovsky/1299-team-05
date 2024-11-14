@@ -13,6 +13,9 @@
     scroll-behavior: smooth;
     font-family: "Roboto", sans-serif;
     --title-color1:#4a4a4d;
+    --dot-color: #8c7568;
+    --choose-us-card-color: #ffffff;
+    --choose-us-card-description-color: #7D7D7D;
 }
 
 .container {
