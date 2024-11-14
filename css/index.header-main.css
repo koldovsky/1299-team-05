@@ -1,3 +1,15 @@
 .header{
-    min-width: 160px;
+    height: 160px;
+
+    .header__image-container{
+        max-width: 300px;
+    }
+    
+    .header__nav-container{
+        max-width: 300px;
+    }
+    
+    .header__icon-container{
+        max-width: 300px;
+    }
 }
