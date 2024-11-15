@@ -49,7 +49,7 @@
   text-align: center;
   font-size: 50px;
   font-weight: 900;
-  color: var(--title-color1)
+  color: var(--choose-us-title-color)
 }
 
 .choose-us__dot {
@@ -58,7 +58,7 @@
   font-weight: 900;
   border-radius: 50%;
   display: inline-block;
-  color: var(--dot-color);
+  color: var(--choose-us-dot-color);
 }
 
 .choose-us__description {
@@ -67,7 +67,7 @@
   font-size: 20px;
   font-weight: 500;
   margin-top: 20px;
-  color: var(--title-color1);
+  color: var(--choose-us-title-color);
 }
 
 .choose-us__cards {
@@ -77,7 +77,7 @@
   height: 100%;
   gap: 20px;
   padding: 40px;
- }
+}
 
 @media (min-width: 768px) {
   .choose-us__cards {
@@ -92,17 +92,17 @@
 }
 
 .choose-us__card {
-  background-color: var(--white-color);
+  background-color: var(--choose-us-card-background-color);
   height: 480px;
   width: 370px;
   text-align: left;
   padding: 31px;
-  
+
 
 }
 
 .choose-us__card-title {
-  color: var(--title-color1);
+  color: var(--choose-us-title-color);
   font-size: 30px;
   margin-top: 30px;
 }
@@ -120,8 +120,9 @@
 
 .choose-us__list {
   font-family: "Open Sans", sans-serif;
-  color: var(--choose-us-card-description-color);;
-  list-style-type: none ;
+  color: var(--choose-us-card-description-color);
+  ;
+  list-style-type: none;
 }
 
 .choose-us__list-item {
@@ -134,12 +135,12 @@
   content: '•';
   position: absolute;
   left: 0;
-  color:var(--dot-color);
+  color: var(--choose-us-dot-color);
   font-size: 18px;
 }
 
 @media (min-width: 768px) {
   .choose-us__top {
-    grid-template-columns:  20% 60% 20%;
+    grid-template-columns: 20% 60% 20%;
   }
 }
