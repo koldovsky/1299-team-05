@@ -31,8 +31,7 @@
 
 .subscribe__form {
   background-color: var(--white-color);
-  width: 80%;
-  max-width: 600px;
+  width: 100%;
   height: 100%;
   margin: 0 auto;
   text-align: center;
@@ -61,11 +60,14 @@
 
 .subscribe__img {
   display: inline-block;
+  width: 65px;
+  height: 15px;
   margin-top: 25px;
 }
 
 .subscribe__description {
-  margin-top: 25px;
+  font-size: 18px;
+  margin-top: 45px;
 }
 
 .subscribe__form-container {
@@ -80,10 +82,9 @@
   width: 100%;
   height: 50px;
   padding-left: 26px;
-  padding: 26px;
   padding-top: 15px;
   padding-bottom: 15px;
-  margin-top: 12px;
+  margin-top: 40px;
   border: none;
   }
 
