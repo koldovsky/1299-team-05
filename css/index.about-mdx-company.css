@@ -1,23 +1,32 @@
 /* Основний контейнер секції */
 .about-section {
   display: grid; /* Використовуємо Grid */
-  grid-template-columns: 57% 43%; /* 7 рівних колонок для великих екранів */
+  grid-template-columns: 57% 43%; /* 57% для контенту, 43% для зображення */
   padding: 100px 0; /* Відступи зверху та знизу */
   width: 100%; /* Використовуємо всю ширину секції */
   background-image: url("../img/background/about-mdx-company-backgraund.png");
   background-position: 50% 55%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* Контейнер для текстового контенту */
+.about-content-wrapper {
+  display: flex;
+  justify-content: flex-end; /* Зміщуємо вміст вправо */
+  width: 100%; /* Дозволяємо використовувати всю ширину */
+  transition: padding 0.3s ease; /* Додаємо плавний перехід для адаптивності */
+}
+
 .about-content {
   width: 100%;
   height: 100%;
   text-align: left;
   align-content: center;
-  padding: 0 150px;
+  padding: 0 150px; /* Відступи для великих екранів */
+  max-width: 900px;
 }
 
-/* Контейнер для зображення */
 .about-image {
   display: block;
   width: 100%;
@@ -33,9 +42,11 @@
 
 /* Стилі для заголовку */
 .about__title {
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 38px;
+  font-weight: bold;
   margin-bottom: 10px;
+  font-family: Roboto, sans-serif;
+  color: #4a4a4d;
 }
 
 .about__point {
@@ -47,12 +58,20 @@
   margin-bottom: 20px;
 }
 
-/* Опис і текст */
-.about-description,
-.about-text {
-  font-size: 1.125rem;
+.about-description {
+  font-size: 18px;
   line-height: 1.6;
   margin-bottom: 10px;
+  font-family: Roboto, sans-serif;
+  color: #4a4a4d;
+}
+
+.about-text {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  font-family: "Open Sans", sans-serif; /* Для .about-text шрифт Open Sans */
+  color: #7d7d7d;
 }
 
 /* Соціальні іконки */
@@ -61,24 +80,25 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 5px;
-}
-svg.about__socials-icon {
-  display: block;
-  width: 30px;
-  border-radius: 50%;
+  gap: 15px;
 
-  .logo {
-    fill: #ffffff;
+  svg.about__socials-icon {
+    display: block;
+    width: 35px;
+    border-radius: 50%;
+
+    .logo {
+      fill: #ffffff;
+    }
   }
-}
 
-.about__socials-link {
-  transition: transform 0.3s ease;
-}
+  .about__socials-link {
+    transition: transform 0.3s ease;
+  }
 
-.about__socials-link:hover svg.about__socials-icon {
-  fill: #8c7568;
+  .about__socials-link:hover svg.about__socials-icon {
+    fill: #8c7568;
+  }
 }
 
 .about__socials--colorone .about__socials-icon {
@@ -97,18 +117,18 @@ svg.about__socials-icon {
 .about-buttons {
   display: flex;
   gap: 20px;
-  margin-top: 10px; /* Зменшено відступ між іконками і кнопками */
+  margin-top: 10px;
   margin-bottom: 20px;
-  text-align: left; /* Вирівнюємо кнопки по лівому краю */
+  text-align: left;
 }
 
 .about__button {
-  width: 125px; /* Встановлюємо ширину кнопки */
-  height: 50px; /* Встановлюємо висоту кнопки */
+  width: 125px;
+  height: 50px;
   font-weight: bold;
   display: flex;
   align-items: center;
-  justify-content: center; /* Вирівнюємо текст по центру */
+  justify-content: center;
   border-radius: 0px;
   text-decoration: none;
   cursor: pointer;
@@ -144,22 +164,30 @@ svg.about__socials-icon {
 /* Адаптивність для малих екранів */
 @media (max-width: 768px) {
   .about-section {
-    grid-template-columns: repeat(5, 1fr); /* 5 колонок для малих екранів */
+    grid-template-columns: 1fr; /* Один стовпець для малих екранів */
     padding: 50px 20px; /* Відступи для маленьких екранів */
   }
+  
+  /* Адаптуємо контент та зображення */
   .about-content,
   .about-image {
-    grid-column: span 5; /* Кожен елемент займає 5 колонок на малих екранах */
-    padding: 0 15px; /* Менші відступи зліва та справа */
+    padding: 0 15px; /* Зменшуємо відступи */
+    grid-column: span 1; /* Кожен елемент займає один стовпець */
+  }
+
+  .about-content-wrapper {
+    padding-left: 0; /* Прибираємо лівий відступ для малих екранів */
+    justify-content: center; /* Вирівнюємо контент по центру */
   }
 
   /* Кнопки */
   .about-buttons {
-    justify-content: flex-start; /* Вирівнюємо кнопки по лівому краю на мобільних пристроях */
-    gap: 10px; /* Зменшуємо відстань між кнопками */
+    justify-content: flex-start;
+    gap: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
   }
+
   .about__button {
     width: 125px; /* Сталий розмір кнопок */
     height: 50px;
