@@ -1,0 +1,105 @@
+.index-want {
+background-image: url('../img/background/want-to-make-background.png'); / Replace with actual path */
+background-size: cover;
+background-position: center;
+padding: 80px 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #fff;
+position: relative;
+}
+
+.index-want::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+z-index: 1;
+}
+
+.index-want__container {
+position: relative;
+z-index: 2;
+background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent form background */
+padding: 40px;
+max-width: 400px;
+width: 100%;
+border-radius: 10px;
+text-align: center;
+}
+
+/* Title and subtitle styling */
+.index-want__title {
+font-size: 1.8em;
+font-weight: bold;
+margin-bottom: 10px;
+color: #fff;
+}
+
+.index-want__subtitle {
+font-size: 1em;
+margin-bottom: 30px;
+color: #ccc;
+}
+
+/* Form field styling */
+.index-want__field {
+margin-bottom: 20px;
+text-align: left;
+}
+
+.index-want__label {
+font-size: 0.9em;
+color: #ccc;
+display: block;
+margin-bottom: 5px;
+}
+
+.index-want__input,
+.index-want__textarea {
+width: 100%;
+padding: 10px;
+border-radius: 5px;
+border: none;
+font-size: 1em;
+color: #333;
+background-color: #f0f0f0;
+}
+
+.index-want__input:focus,
+.index-want__textarea:focus {
+outline: none;
+background-color: #e0e0e0;
+}
+
+.index-want__textarea {
+resize: none;
+}
+
+/* Submit button styling */
+.index-want__button {
+display: block;
+width: 100%;
+padding: 12px;
+font-size: 1em;
+font-weight: bold;
+color: #fff;
+background-color: #7d6256;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.index-want__button:hover {
+background-color: #5a473c;
+}
+
+/* Decorative zigzag element styling */
+.index-want img {
+margin: 20px auto;
+}
