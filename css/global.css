@@ -1,31 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline-style: none;
-    outline-color: #000000;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline-style: none;
+  outline-color: #000000;
 }
 
 :root {
-    scroll-behavior: smooth;
-    font-family: "Roboto", sans-serif;
-    --title-color1:#4a4a4d;
-    --dot-color: #8c7568;
-    --choose-us-card-color: #ffffff;
-    --choose-us-card-description-color: #7D7D7D;
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .container {
-    max-width: 1200px;
-    margin: auto;
+  max-width: 1200px;
+  margin: auto;
 }
 
 img {
-    display: block;
+  display: block;
 }
-

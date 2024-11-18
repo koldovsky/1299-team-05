@@ -3,9 +3,12 @@
   background-repeat: no-repeat;
   background-position: left;
   background-size: cover;
+  width: 100%;
+  height: 100%;
   padding-top: 90px;
   padding-bottom: 100px;
-}
+} 
+
 
 .choose-us__block {
   padding-left: 40px;
@@ -13,6 +16,17 @@
   margin-left: 25.2px;
   margin-right: 25.2px;
 }
+
+.choose-us__top {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
 
 .choose-us__header {
   padding-left: 15px;
@@ -36,7 +50,7 @@
   text-align: center;
   font-size: 50px;
   font-weight: 900;
-  color: var(--title-color1)
+  color: var(--choose-us-title-color)
 }
 
 .choose-us__dot {
@@ -45,7 +59,7 @@
   font-weight: 900;
   border-radius: 50%;
   display: inline-block;
-  color: var(--dot-color);
+  color: var(--choose-us-dot-color);
 }
 
 .choose-us__description {
@@ -54,12 +68,14 @@
   font-size: 20px;
   font-weight: 500;
   margin-top: 20px;
-  color: var(--title-color1);
+  color: var(--choose-us-title-color);
 }
 
 .choose-us__cards {
   display: grid;
   justify-content: center;
+  width: 100%;
+  height: 100%;
   gap: 20px;
   padding: 40px;
 }
@@ -77,33 +93,37 @@
 }
 
 .choose-us__card {
-  background-color: #ffffff;
+  background-color: var(--choose-us-card-background-color);
+  height: 480px;
+  width: 370px;
   text-align: left;
   padding: 31px;
+
+
 }
 
 .choose-us__card-title {
-  color: var(--title-color1);
-  margin-top: 20px;
+  color: var(--choose-us-title-color);
+  font-size: 30px;
+  margin-top: 30px;
 }
 
 .choose-us__icon-card {
-  width: 70px;
-  height: 70px;
+  width: 100px;
+  height: 100px;
 }
 
 .choose-us__card-description {
   font-family: "Open Sans", sans-serif;
-  color: #7D7D7D;
-  margin-top: 20px;
+  color: var(--choose-us-card-description-color);
+  margin-top: 30px;
 }
 
 .choose-us__list {
   font-family: "Open Sans", sans-serif;
-  color: #7D7D7D;
+  color: var(--choose-us-card-description-color);
+  ;
   list-style-type: none;
-  padding: 0;
-  margin: 0;
 }
 
 .choose-us__list-item {
@@ -116,6 +136,12 @@
   content: '•';
   position: absolute;
   left: 0;
-  color: #8c7568;
+  color: var(--choose-us-dot-color);
   font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  .choose-us__top {
+    grid-template-columns: 20% 60% 20%;
+  }
 }

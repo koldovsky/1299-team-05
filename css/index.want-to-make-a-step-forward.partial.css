@@ -1,0 +1,157 @@
+.index-want {
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.index-want__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.index-want__bg-image {
+  background: url(../img/background/want-to-make-background.png) center / cover
+      no-repeat,
+    rgb(52, 52, 54);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.index-want__content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.index-want__form {
+  background: #343436;
+  width: 100%;
+  max-width: 450px;
+  min-height: 600px;
+  padding: 60px 40px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.index-want__title {
+  font-size: 36px;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.index-want__subtitle {
+  font-size: 18px;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.index-want__wave {
+  text-align: center;
+  padding: 20px;
+}
+
+.index-want__wave-image {
+  display: block;
+  position: relative;
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.index-want__label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.index-want__input,
+.index-want__textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  background-color: #383839;
+  border: 1px solid #444;
+  color: #fff;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+.index-want__input:focus,
+.index-want__textarea:focus {
+  outline: none;
+  border-color: #8c7568;
+}
+
+.index-want__textarea {
+  resize: vertical;
+}
+
+.index-want__button {
+  width: 100%;
+  padding: 15px;
+  background-color: #8c7568;
+  border: none;
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 36px;
+  transition: background-color 0.3s ease;
+}
+
+.index-want__button:hover {
+  background-color: #fff;
+  color: #000000;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .index-want__form {
+    padding: 30px 20px;
+    max-width: 100%;
+  }
+
+  .index-want__wave-image {
+    width: 60%;
+  }
+
+  .index-want__title {
+    font-size: 28px;
+  }
+
+  .index-want__subtitle {
+    font-size: 16px;
+  }
+}

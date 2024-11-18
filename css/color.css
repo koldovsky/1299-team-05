@@ -1,0 +1,33 @@
+:root {
+  /*index.header.main.css */
+
+  /*index.your-business-is-our-concern.css */
+
+  /*index.about-mdx-company.css */
+
+  --about-title-color1: #4a4a4d;
+  --primary-color: #8c7568;
+  --tertiary-color: #7d7d7d;
+  --background-color: #ffffff;
+  --hover-background-color: #343436;
+
+  /*index.why-choose-us.css */
+
+  --choose-us-title-color: #4a4a4d;
+  --choose-us-dot-color: #8c7568;
+  --choose-us-card-background-color: #ffffff;
+  --choose-us-card-description-color: #7d7d7d;
+
+  /*index.services.css */
+
+  /*index.subscribe-now.css */
+
+  --subscribe-now-form-color: #ffffff;
+  --subscribe-now-title-color: #4a4a4d;
+  --subscribe-now-dot-color: #8c7568;
+  --subscribe-now-input-text-color: #3434361f;
+  --subscribe-now-input-button-color: #4a4a4d;
+  --subscribe-now-input-button-hover-color: #8c7568;
+
+  /*index.how-we-work.main.css */
+}

@@ -1,56 +1,89 @@
-<section class="index-want">
-  <div class="index-want__container">
-    <h2 class="index-want__title">Want to make a step forward?</h2>
-    <img src="img/global/zigzag-element.svg" alt="Decorative zigzag element" />
-    <p class="index-want__subtitle">
-      Complete the form below and tell us a bit about your business!
-    </p>
+<section class="index-want"> 
+  <div class="index-want__bg">
+    <div class="index-want__bg-image" aria-hidden="true"></div>
+  </div>
 
-    <form class="index-want__form" action="#" method="post">
-      <div class="index-want__field">
-        <label for="name" class="index-want__label">Name*</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          class="index-want__input"
-          required
+  <div class="index-want__content">
+    <form class="index-want__form">
+      <p class="index-want__title">
+        <span class="index-want__text-block">
+          <span class="index-want__text-content">
+            Want to make a step forward?
+          </span>
+        </span>
+      </p>
+
+      <div class="index-want__wave">
+        <img
+          src="img/global/zigzag-element.svg"
+          alt="Wave Illustration"
+          class="index-want__wave-image"
         />
       </div>
 
-      <div class="index-want__field">
-        <label for="phone" class="index-want__label">Phone number*</label>
-        <input
-          type="tel"
-          id="phone"
-          name="phone"
-          class="index-want__input"
-          required
-        />
-      </div>
+      <p class="index-want__subtitle">
+        <span class="index-want__text-block">
+          <span class="index-want__text-content">
+            Complete the form below and tell us a bit about your business!
+          </span>
+        </span>
+      </p>
 
-      <div class="index-want__field">
-        <label for="email" class="index-want__label">Email*</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          class="index-want__input"
-          required
-        />
-      </div>
+      <label for="name" class="index-want__label visually-hidden">
+        Name*
+      </label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        class="index-want__input"
+        placeholder="Name*"
+        required
+      />
 
-      <div class="index-want__field">
-        <label for="message" class="index-want__label">Your message</label>
-        <textarea
-          id="message"
-          name="message"
-          rows="4"
-          class="index-want__textarea"
-        ></textarea>
-      </div>
+      <label for="phone" class="index-want__label visually-hidden">
+        Phone number*
+      </label>
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        class="index-want__input"
+        placeholder="Phone number*"
+        required
+      />
 
-      <button type="submit" class="index-want__button">Request a Quote</button>
+      <label for="email" class="index-want__label visually-hidden">
+        Email*
+      </label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        class="index-want__input"
+        placeholder="Email*"
+        required
+      />
+
+      <label for="message" class="index-want__label visually-hidden">
+        Your Message
+      </label>
+      <textarea
+        id="message"
+        name="message"
+        class="index-want__textarea"
+        rows="4"
+        placeholder="Your Message"
+        required
+      ></textarea>
+
+      <button
+        type="submit"
+        class="index-want__button"
+        aria-label="Request a Quote"
+      >
+        Request a Quote
+      </button>
     </form>
   </div>
 </section>
