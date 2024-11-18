@@ -1,4 +1,4 @@
-.contact-section {
+.index-want {
   position: relative;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -8,7 +8,7 @@
   align-items: center;
 }
 
-.contact-section__bg {
+.index-want__bg {
   position: absolute;
   top: 0;
   right: 0;
@@ -19,7 +19,7 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.contact-section__bg-image {
+.index-want__bg-image {
   background: url(../img/background/want-to-make-background.png) center / cover
       no-repeat,
     rgb(52, 52, 54);
@@ -30,7 +30,7 @@
   left: 0;
 }
 
-.contact-section__content {
+.index-want__content {
   position: relative;
   z-index: 1;
   text-align: center;
@@ -39,11 +39,11 @@
   padding: 0 20px;
 }
 
-.contact-section__form {
+.index-want__form {
   background: #343436;
   width: 100%;
-  max-width: 450px; /* Вужча форма */
-  min-height: 600px; /* Вища форма */
+  max-width: 450px;
+  min-height: 600px;
   padding: 60px 40px;
   margin: 0 auto;
   box-sizing: border-box;
@@ -54,41 +54,41 @@
   align-items: center;
 }
 
-.contact-section__title {
+.index-want__title {
   font-size: 36px;
   color: white;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.contact-section__subtitle {
+.index-want__subtitle {
   font-size: 18px;
   color: white;
   margin-bottom: 40px;
 }
 
-.contact-section__wave {
+.index-want__wave {
   text-align: center;
   padding: 20px;
 }
 
-.contact-section__wave-image {
+.index-want__wave-image {
   display: block;
   position: relative;
-  width: 50%; /* Зменшено до 50% */
+  width: 50%;
   height: auto;
   margin: 0 auto;
 }
 
-.contact-section__label {
+.index-want__label {
   display: block;
   margin-bottom: 8px;
   font-size: 14px;
   color: #fff;
 }
 
-.contact-section__input,
-.contact-section__textarea {
+.index-want__input,
+.index-want__textarea {
   width: 100%;
   padding: 12px;
   margin-bottom: 20px;
@@ -99,17 +99,17 @@
   font-family: "Roboto", sans-serif;
 }
 
-.contact-section__input:focus,
-.contact-section__textarea:focus {
+.index-want__input:focus,
+.index-want__textarea:focus {
   outline: none;
   border-color: #8c7568;
 }
 
-.contact-section__textarea {
+.index-want__textarea {
   resize: vertical;
 }
 
-.contact-section__button {
+.index-want__button {
   width: 100%;
   padding: 15px;
   background-color: #8c7568;
@@ -121,7 +121,7 @@
   transition: background-color 0.3s ease;
 }
 
-.contact-section__button:hover {
+.index-want__button:hover {
   background-color: #fff;
   color: #000000;
 }
@@ -138,20 +138,20 @@
 }
 
 @media screen and (max-width: 768px) {
-  .contact-section__form {
+  .index-want__form {
     padding: 30px 20px;
     max-width: 100%;
   }
 
-  .contact-section__wave-image {
-    width: 60%; /* Трохи збільшено для мобільних */
+  .index-want__wave-image {
+    width: 60%;
   }
 
-  .contact-section__title {
-    font-size: 28px; /* Менший шрифт для мобільних */
+  .index-want__title {
+    font-size: 28px;
   }
 
-  .contact-section__subtitle {
-    font-size: 16px; /* Менший шрифт для мобільних */
+  .index-want__subtitle {
+    font-size: 16px;
   }
 }
