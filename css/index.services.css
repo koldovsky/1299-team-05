@@ -1,0 +1,158 @@
+/* Загальний стиль для секції "Services" */
+.index-services {
+    padding: 60px 20px;
+    background-image: url("../img/background/services-bg.png");
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .index-services__title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  .index-services__point {
+    color: #8c7568;
+  }
+  
+  .index-services__subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+  }
+  
+  /* Загальний стиль для рядів */
+  .index-services__row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .index-services__container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    gap: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Ряд із фоновою картинкою */
+  .index-services__row--first,
+  .index-services__row--second {
+    background-size: cover;
+    background-position: center;
+    padding: 40px 20px;
+    border-radius: 10px;
+  }
+  
+  .index-services__row--first {
+    background-image: url('../img/index.services.partial/service-1.webp'); /* Шлях до фону */
+    background-size: contain; /* Замість cover використовуйте contain, щоб фон не виходив за межі */
+    background-position: center; /* Центрує фон */
+    background-repeat: no-repeat; /* Запобігає повторенню фону */
+    padding: 40px 20px;
+    border-radius: 0;
+}
+  
+  .index-services__row--second {
+    background-image: url('../img/index.services.partial/service-2.webp'); /* Шлях до фону */
+    background-size: contain; /* Замість cover використовуйте contain, щоб фон не виходив за межі */
+    background-position: center; /* Центрує фон */
+    background-repeat: no-repeat; /* Запобігає повторенню фону */
+    padding: 40px 20px;
+    border-radius: 0;
+  }
+  
+  /* Стиль для зображень */
+  .index-services__item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Округлені краї для зображень */
+  }
+  
+  /* Текстовий контент */
+  .index-services__content {
+    color: #ffffff;
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  .index-services__heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .index-services__description {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  /* Кнопка */
+  .index-services__row--button {
+    text-align: center;
+  }
+  
+  .index-services__button {
+    background-color: #8c7568; /* Колір кнопки */
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border-radius: 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .index-services__button:hover {
+    background-color: #a28c79; /* Світліший відтінок кнопки при наведенні */
+  }
+  
+  /* Адаптивний дизайн */
+  @media screen and (max-width: 768px) {
+    .index-services__row--first,
+    .index-services__row--second {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .index-services__container {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .index-services__content {
+      max-width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .index-services__title {
+      font-size: 1.8rem;
+    }
+  
+    .index-services__subtitle {
+      font-size: 1rem;
+    }
+  
+    .index-services__heading {
+      font-size: 1.2rem;
+    }
+  
+    .index-services__description {
+      font-size: 0.9rem;
+    }
+  
+    .index-services__button {
+      font-size: 0.9rem;
+      padding: 10px 20px;
+    }
+  }
+  
