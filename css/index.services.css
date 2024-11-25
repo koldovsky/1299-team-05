@@ -53,7 +53,7 @@
   }
   
   .index-services__row--first {
-    background-image: url('../img/index.services.partial/service-1.webp'); /* Шлях до фону */
+    background-image: url('../img/index.services.partial/service-1.webp'); 
     background-size: contain; /* Замість cover використовуйте contain, щоб фон не виходив за межі */
     background-position: center; /* Центрує фон */
     background-repeat: no-repeat; /* Запобігає повторенню фону */
@@ -62,7 +62,7 @@
 }
   
   .index-services__row--second {
-    background-image: url('../img/index.services.partial/service-2.webp'); /* Шлях до фону */
+    background-image: url('../img/index.services.partial/service-2.webp');
     background-size: contain; /* Замість cover використовуйте contain, щоб фон не виходив за межі */
     background-position: center; /* Центрує фон */
     background-repeat: no-repeat; /* Запобігає повторенню фону */
