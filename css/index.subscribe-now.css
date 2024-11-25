@@ -2,8 +2,11 @@
   background-image: url(../img/background/subscribe-now-background.png);
   padding-top: 100px;
   padding-bottom: 100px;
+  min-height: 630px;
+  width: 100% ;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  height: 100vh;
   margin: 0;
 }
 
@@ -31,10 +34,14 @@
 
 .subscribe__form {
   background-color: var(--subscribe-now-form-color);
-  width: 100%;
-  height: 100%;
+  width: 600px;
+  height: 730px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: auto;
   margin: 0 auto;
-  text-align: center;
   padding-left: 35px;
   padding-right: 35px;
   padding-top: 35px;
@@ -44,7 +51,8 @@
 .subscribe__title {
   font-family: "Roboto", sans-serif;
   color: var(--subscribe-now-title-color);
-  text-align: center;
+  height: auto;
+  max-width: 100%;
   font-size: 50px;
   font-weight: 900;
 }
@@ -59,20 +67,23 @@
 }
 
 .subscribe__img {
-  display: inline-block;
-  width: 65px;
-  height: 15px;
-  margin-top: 25px;
+  max-width: 100%;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+   margin-top: 25px;
 }
 
 .subscribe__description {
+  height: 60px;
+  max-width: 100%;
   font-size: 18px;
   margin-top: 45px;
 }
 
 .subscribe__form-container {
-  width: 100%;
-  height: 50px;
+  width: 500px;
+  height: 20px;
   margin-top: 12px;
 }
 
