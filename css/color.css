@@ -1,8 +1,9 @@
 :root {
   /*index.header.main.css */
-  --header-bachground-color: #333;
+  --header-background-color: #333;
   --header-hover-link-color: #8c7569;
   --header-burger-menu-color: #fff;
+  --header-menu-item-color: #fff;
   /*index.your-business-is-our-concern.css */
 
   /*index.about-mdx-company.css */

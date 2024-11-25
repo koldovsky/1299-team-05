@@ -2,16 +2,11 @@
     display: grid;
     grid-template-columns: 1fr 510px 1fr;
     padding: 20px 0;
-    background-color: var(--header-bachground-color);
-    height: 160px;
-    max-height: 160px;
+    background-color: var(--header-background-color);
 }
 
-/* Контейнер для зображення логотипу */
 .header__image-container {
     display: flex;
-    height: 100%;
-    width: 100%;
     justify-content: center;
     object-position: 50% 50%;
 }
@@ -20,28 +15,26 @@
     height: 120px;
 }
 
-/* Навігаційне меню */
 .header__nav-container {
-    width: 100%;
     align-content: center;
 }
 
 .header__nav {
     list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    width: 100%;
+    gap: 20px;
     justify-content: center;
 }
 
 .header__nav-item {
-    flex: 1;
-    text-align: center;
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
 }
 
 .header__nav-link {
-    color: #fff;
+    color: var(--header-menu-item-color);
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
@@ -49,33 +42,22 @@
 }
 
 .header__nav-link:hover {
-    color: var(--header-hover-link-color); /* Колір при наведенні */
+    color: var(--header-hover-link-color);
 }
-
-/* Контейнер для іконок соціальних мереж */
 .header__icon-container {
-    width: 100%;
-    height: 100%;
-    display: block;
     align-content: center;
-    text-align: center;
 }
-
 .header__icon {
     list-style: none;
-    display: block;
-    gap: 10px;
     margin: 0;
     padding: 0;
-}
-
-.header__icon-item {
-    display: inline-block;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
 }
 
 .header__icon-item svg {
     width: 24px;
-    height: auto;
     background-color: var(--header-bachground-color);
     transition: filter 0.3s ease;
 }
@@ -96,6 +78,7 @@ svg.header__socials-icon {
 }
 
 .header__burger {
+    display: none;
     width: 30px;
     height: 30px;
     flex-direction: column;
@@ -117,7 +100,6 @@ svg.header__socials-icon {
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding: 20px 0;
-        background-color: var(--header-bachground-color);
         height: 160px;
         max-height: 160px;
     }
@@ -127,35 +109,6 @@ svg.header__socials-icon {
     }
 
     .header__burger {
-        display: flex;
-    }
-
-    .header__burger.active span:nth-child(1) {
-        transform: translateY(10px) rotate(45deg);
-    }
-    
-    .header__burger.active span:nth-child(2) {
-        opacity: 0;
-    }
-    
-    .header__burger.active span:nth-child(3) {
-        transform: translateY(-10px) rotate(-45deg);
-    }
-    
-    .header__nav-container {
-        display: none;
-        position: absolute;
-        top: 100%;
-        right: 0;
-        background-color: var(--header-bachground-color);
-        flex-direction: column;
-        width: 100%;
-        padding: 20px 0;
-        z-index: 99;
-        text-align: center;
-    }
-    
-    .header__nav-container.active {
         display: flex;
     }
 }
