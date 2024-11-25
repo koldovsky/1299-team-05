@@ -55,21 +55,25 @@
 }
 
 .index-want__title {
-  font-size: 36px;
+  font-size: 40px;
   color: white;
   font-weight: 700;
   margin-bottom: 20px;
+  font-weight: bold;
+  font-family: Roboto, sans-serif;
 }
 
 .index-want__subtitle {
-  font-size: 18px;
+  font-size: 16px;
   color: white;
   margin-bottom: 40px;
+  font-family: 'Open Sans';
+  font-weight: bold;
 }
 
 .index-want__wave {
   text-align: center;
-  padding: 20px;
+  padding: 10px;
 }
 
 .index-want__wave-image {
@@ -90,13 +94,14 @@
 .index-want__input,
 .index-want__textarea {
   width: 100%;
-  padding: 12px;
+  padding: 15px 26px;
   margin-bottom: 20px;
   background-color: #383839;
-  border: 1px solid #444;
+  border: none;
   color: #fff;
-  font-size: 16px;
-  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
 }
 
 .index-want__input:focus,
@@ -115,10 +120,11 @@
   background-color: #8c7568;
   border: none;
   color: #ffffff;
-  font-size: 18px;
+  font-size: 12px;
   cursor: pointer;
   margin-top: 36px;
   transition: background-color 0.3s ease;
+  font-weight: bold;
 }
 
 .index-want__button:hover {
