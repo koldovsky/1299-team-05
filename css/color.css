@@ -1,6 +1,7 @@
 :root {
   /*index.header.main.css */
-
+  --header-bachground-color: #333;
+  --header-hover-link-color: #8c7569;
   /*index.your-business-is-our-concern.css */
 
   /*index.about-mdx-company.css */
