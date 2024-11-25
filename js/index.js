@@ -1,4 +1,5 @@
 function init() {
+    import('index.header.js');
     import('index.want-to-make-a-step-forward.js');
 }
 
@@ -9,3 +10,5 @@ document.body.addEventListener('htmx:afterOnLoad', () => {
     loadedPartialsCount++;
     if (loadedPartialsCount === totalPartials) init();
 });
+
+
