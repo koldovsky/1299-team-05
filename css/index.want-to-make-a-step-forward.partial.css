@@ -22,14 +22,13 @@
 }
 
 .index-want__bg-image {
-  background: url(../img/background/want-to-make-background.png) center / cover
-      no-repeat,
-    rgb(52, 52, 54);
+  background: url(../img/background/want-to-make-background.png) center / cover no-repeat, rgb(52, 52, 54);
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+  object-fit: cover;
 }
 
 /* Контент */
@@ -64,7 +63,6 @@
   color: white;
   font-weight: 700;
   margin-bottom: 20px;
-  font-weight: bold;
   font-family: Roboto, sans-serif;
 }
 
@@ -89,6 +87,7 @@
   width: 50%;
   height: auto;
   margin: 0 auto;
+  transition: transform 0.3s ease;
 }
 
 /* Лейбл для полів */
@@ -97,6 +96,7 @@
   margin-bottom: 8px;
   font-size: 14px;
   color: #fff;
+  font-weight: bold;
 }
 
 /* Поля введення та текстове поле */
@@ -116,7 +116,7 @@
 /* Підсвічування полів з помилками */
 .index-want__input.error,
 .index-want__textarea.error {
-  border: 1px solid red; /* Червона рамка для полів з помилками */
+  border: 1px solid red;
   background-color: #fdd; /* Світло-червоний фон */
 }
 
@@ -176,4 +176,51 @@
   .index-want__subtitle {
     font-size: 16px;
   }
+}
+
+@media screen and (max-width: 480px) {
+  .index-want__title {
+    font-size: 24px; /* Зменшення заголовку на маленьких екранах */
+  }
+
+  .index-want__subtitle {
+    font-size: 14px;
+  }
+
+  .index-want__input,
+  .index-want__textarea {
+    padding: 12px 20px; /* Менші відступи для полів */
+    font-size: 14px;
+  }
+
+  .index-want__button {
+    padding: 14px;
+  }
+}
+
+/* Плавні анімації для полів з помилками */
+.index-want__input.error, .index-want__textarea.error {
+  border: 1px solid red;
+  background-color: #fdd;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Легка анімація хвилі */
+.index-want__wave-image:hover {
+  transform: rotate(10deg);
+}
+
+/* Підказки або повідомлення про помилки */
+.form-control.error small {
+  color: red;
+  font-size: 12px;
+  display: block;
+  margin-top: 5px;
+}
+
+.form-control.success small {
+  color: green;
+  font-size: 12px;
+  display: block;
+  margin-top: 5px;
 }
