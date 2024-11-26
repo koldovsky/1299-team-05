@@ -22,7 +22,11 @@
   --choose-us-card-description-color: #7d7d7d;
 
   /*index.services.css */
-
+  --services-primary-color: #ffffff;
+  --services-secondary-color: #8c7569;  
+  --services-background-color: #000000; 
+  --services-button-border-color: #8c7569; 
+  --services-button-hover-color: #8c7569; 
   /*index.subscribe-now.css */
 
   --subscribe-now-form-color: #ffffff;
