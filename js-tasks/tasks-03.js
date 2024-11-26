@@ -47,8 +47,8 @@ function giveMeFive(obj) {
 //замінити var на let, зміниться область видимості змінної і
 function buildFun(n) {
   let res = [];
-
   for (let i = 0; i < n; i++) {
+    
     res.push(function () {
       console.log(i);
       return i;
