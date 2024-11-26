@@ -1,135 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MDX Company</title>
-    <link rel="stylesheet" href="css/index.css" />
-    <script
-      src="https://unpkg.com/htmx.org@1.9.10"
-      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
-      crossorigin="anonymous"
-    ></script>
-  </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MDX Company</title>
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="shortcut icon" href="./img/global/company-logo-small.webp" type="image/x-icon" />
+
+  <script src="https://unpkg.com/htmx.org@1.9.10"
+    integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Taras -->
+  <header>
+    <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.header-main.partial.html"></div>
+  </header>
+  <main>
     <!-- Taras -->
-    <header>
-      <div
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.header-main.partial.html"
-      ></div>
-    </header>
-    <main>
-      <!-- Taras -->
-      <div
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.your-business-is-our-concern.partial.html"
-      ></div>
-      <!-- Natali -->
-      <div
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.about-mdx-company.partial.html"
-      ></div>
-      <!-- Yura -->
-      <div
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.why-choose-us.partial.html"
-      ></div>
-      <!-- Natali -->
-      <div
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.services.partial.html"
-      ></div>
-      <!-- Yura -->
-      <div
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.subscribe-now.partial.html"
-      ></div>
-      <!-- Yura -->
-      <div
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.how-we-work.partial.html"
-      ></div>
-      <!-- Natali -->
-      <div
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.events.partial.html"
-      ></div>
-      <!-- Natali -->
-      <div
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.careers.partial.html"
-      ></div>
-      <!-- Yura -->
-      <div
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.our-team.partial.html"
-      ></div>
-      <!-- Natali -->
-      <div
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.want-to-make-a-step-forward.partial.html"
-      ></div>
-      <!-- Yura -->
-      <div
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.testimonials.partial.html"
-      ></div>
-      <!-- Natali -->
-      <div
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.awards.partial.html"
-      ></div>
-      <!-- Yura -->
-      <div
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.cases.partial.html"
-      ></div>
-      <!-- Natali -->
-      <div
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.clients.partial.html"
-      ></div>
-      <!-- Taras -->
-      <div
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.faq.partial.html"
-      ></div>
-      <!-- Taras -->
-      <div
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.contacts.partial.html"
-      ></div>
-    </main>
-    <footer>
-      <!-- Taras -->
-      <div
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.footer.partial.html"
-      ></div>
-    </footer>
-    <script>
-      src = "js/index.js";
-    </script>
-  </body>
+    <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.your-business-is-our-concern.partial.html">
+    </div>
+    <!-- Natali -->
+    <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.about-mdx-company.partial.html"></div>
+    <!-- Yura -->
+    <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.why-choose-us.partial.html"></div>
+    <!-- Natali -->
+    <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.services.partial.html"></div>
+    <!-- Yura -->
+    <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.subscribe-now.partial.html"></div>
+    <!-- Yura -->
+    <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.how-we-work.partial.html"></div>
+    <!-- Natali -->
+    <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.events.partial.html"></div>
+    <!-- Natali -->
+    <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.careers.partial.html"></div>
+    <!-- Yura -->
+    <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.our-team.partial.html"></div>
+    <!-- Natali -->
+    <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.want-to-make-a-step-forward.partial.html">
+    </div>
+    <!-- Yura -->
+    <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.testimonials.partial.html"></div>
+    <!-- Natali -->
+    <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.awards.partial.html"></div>
+    <!-- Yura -->
+    <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.cases.partial.html"></div>
+    <!-- Natali -->
+    <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.clients.partial.html"></div>
+    <!-- Taras -->
+    <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.faq.partial.html"></div>
+    <!-- Taras -->
+    <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.contacts.partial.html"></div>
+  </main>
+  <footer>
+    <!-- Taras -->
+    <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.footer.partial.html"></div>
+  </footer>
+  <script>
+    src = "js/index.js";
+  </script>
+</body>
+
 </html>
