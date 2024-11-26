@@ -7,7 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline-style: auto;
+  outline-style: none;
   outline-color: #000000;
 }
 
