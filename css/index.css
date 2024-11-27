@@ -1,5 +1,6 @@
-@import "global.css";
 @import "color.css";
+@import "variables.css";
+@import "global.css";
 @import "index.header-main.css";
 @import "index.your-business-is-our-concern.css";
 @import "index.about-mdx-company.css";
@@ -9,4 +10,5 @@
 @import "index.subscribe-now.css";
 @import "index.how-we-work.css";
 @import "index.want-to-make-a-step-forward.partial.css";
+@import "index.footer.css";
 

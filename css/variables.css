@@ -1,0 +1,8 @@
+:root {
+    --ui-content-gutter-320: 24px;
+    --ui-content-gutter-480: 24px;
+    --ui-content-gutter-768: 32px;
+    --ui-content-gutter-992: 40px;
+    --ui-content-gutter-1280: 15px;
+    --ui-content-gutter-default: 15px;
+}

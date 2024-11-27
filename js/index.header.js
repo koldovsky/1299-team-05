@@ -10,9 +10,3 @@ burger.addEventListener("click", () => {
   main.classList.toggle("active");
   footer.classList.toggle("active");
 });
-
-
-const btn = document.getElementById("testBtn");
-btn.addEventListener("click", () => {
-    console.log("active btn");
-});

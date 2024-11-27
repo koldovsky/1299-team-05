@@ -94,6 +94,9 @@
   }
 
   .index__yourbusiness-container-left {
-    padding: 0px;
+    padding: 30px;
+    .index__yourbusiness-title {
+      font-size: 50px;
+    }
   }
 }
