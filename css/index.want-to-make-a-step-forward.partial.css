@@ -137,56 +137,7 @@
   overflow: hidden;
 }
 
-/* Стиль для полів з помилками */
-.index-want__input.error,
-.index-want__textarea.error {
-  border: 2px solid red;
-}
-
-/* Можна додати також фонове забарвлення для підсвічування */
-.index-want__input.error::placeholder,
-.index-want__textarea.error::placeholder {
-  color: red;
-}
-
-.error-message {
-  color: red;
-  font-size: 12px;
-  margin-top: -10px;
-  margin-bottom: 15px;
-  text-align: left;
-  font-family: "Open Sans", sans-serif;
-}
-
-@media screen and (max-width: 768px) {
-  .index-want__form {
-    padding: 30px 20px;
-  }
-
-  .index-want__wave-image {
-    width: 60%;
-  }
-
-  .index-want__title {
-    font-size: 28px;
-  }
-}
-
-/*#success-message {
-  display: block !important;
-  background-color: #d4edda; 
-  color: #155724; 
-  border: 1px solid #c3e6cb;
-  padding: 10px 20px;
-  margin-top: 20px;
-  border-radius: 5px;
-  font-size: 14px;
-  text-align: center;
-  font-family: "Open Sans", sans-serif;
-  animation: fadeIn 0.5s ease-in-out;
-}*/
-
-/* Стилі для модального вікна */
+/* Стилі для повідомлення про успішну відправку */
 #success-message {
   display: none; /* Спочатку приховане */
   background-color: #d4edda;
@@ -202,19 +153,23 @@
 }
 
 /* Модальне вікно, яке показується як звичайний блок */
-/* Модальне вікно */
 .modal {
+  display: none; /* За замовчуванням приховане */
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5); /* Напівпрозорий фон */
-  display: none; /* Початково приховане */
   justify-content: center;
   align-items: center;
   z-index: 1000;
 }
+
+.modal.show {
+  display: flex; /* Відображається після додавання класу .show */
+}
+
 .modal-content {
   background: #fff;
   padding: 20px;
@@ -222,10 +177,6 @@
   text-align: center;
   max-width: 500px;
   width: 100%;
-}
-
-.modal.show {
-  display: flex; /* Модальне вікно стане видимим */
 }
 
 .modal-close-btn {
@@ -243,6 +194,40 @@
   color: #000;
 }
 
+#success-message.show {
+  display: block;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Медіа-запити для адаптації на мобільні пристрої */
+@media screen and (max-width: 768px) {
+  .index-want__form {
+    padding: 30px 20px;
+  }
+
+  .index-want__wave-image {
+    width: 60%;
+  }
+
+  .index-want__title {
+    font-size: 28px;
+  }
+
+  .index-want__subtitle {
+    font-size: 14px; /* Зменшити розмір підзаголовку на мобільних */
+  }
+
+  .index-want__input,
+  .index-want__textarea {
+    font-size: 14px; /* Трохи збільшуємо розмір шрифта в полях */
+    padding: 12px 20px;
+  }
+
+  .index-want__button {
+    padding: 12px;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .index-want__title {
     font-size: 24px;
@@ -251,9 +236,19 @@
   .index-want__input,
   .index-want__textarea {
     padding: 12px 20px;
+    font-size: 14px; /* Більший розмір шрифта для зручності на маленьких екранах */
   }
 
   .index-want__button {
     padding: 10px;
+    font-size: 14px;
+  }
+
+  .index-want__subtitle {
+    font-size: 14px; /* Зменшити розмір підзаголовку */
+  }
+
+  .index-want__wave-image {
+    width: 70%; /* Збільшення ширини зображення на дуже маленьких екранах */
   }
 }
