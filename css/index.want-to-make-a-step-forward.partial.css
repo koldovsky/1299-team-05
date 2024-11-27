@@ -107,20 +107,6 @@
   resize: none;
 }
 
-/* Підсвічування полів з помилками */
-.index-want__input.error,
-.index-want__textarea.error {
-  border: 1px solid red;
-  background-color: #fdd; /* Світло-червоний фон */
-}
-
-/* Підсвічування при фокусі на полях з помилками */
-.index-want__input.error:focus,
-.index-want__textarea.error:focus {
-  border-color: red;
-  background-color: #fbb; /* Темніший червоний фон при фокусі */
-}
-
 .index-want__button {
   width: 100%;
   padding: 15px;
@@ -139,6 +125,7 @@
   color: #000000;
 }
 
+/* Візуально приховані елементи, для доступності */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -148,6 +135,18 @@
   border: 0;
   clip: rect(0, 0, 0, 0);
   overflow: hidden;
+}
+
+/* Стиль для полів з помилками */
+.index-want__input.error,
+.index-want__textarea.error {
+  border: 2px solid red;
+}
+
+/* Можна додати також фонове забарвлення для підсвічування */
+.index-want__input.error::placeholder,
+.index-want__textarea.error::placeholder {
+  color: red;
 }
 
 @media screen and (max-width: 768px) {
@@ -175,6 +174,6 @@
   }
 
   .index-want__button {
-    padding: 14px;
+    padding: 10px;
   }
 }
