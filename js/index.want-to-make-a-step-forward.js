@@ -1,42 +1,38 @@
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.querySelector(".index-want__form");
-  const inputs = form.querySelectorAll("input, textarea");
-  const successMessageContainer = document.getElementById("success-message");
   const modal = document.getElementById("modal");
+  const successMessage = document.getElementById("success-message");
   const closeModalButton = document.getElementById("close-modal");
 
   form.addEventListener("submit", function (event) {
     event.preventDefault(); // Запобігаємо стандартному надсиланню форми
 
-    let isValid = true;
-
-    // Перевірка валідності полів
-    inputs.forEach((input) => {
-      if (input.required && !input.value.trim()) {
-        input.classList.add("error");
-        isValid = false;
-      }
-    });
-
-    if (!isValid) {
-      return; // Якщо є помилки, не відправляємо форму
-    }
-
-    // Якщо форма валідна, показуємо повідомлення
-    successMessageContainer.textContent = "Форма успішно надіслана!"; // Текст повідомлення
-    successMessageContainer.style.display = "block"; // Показуємо блок повідомлення
+    // Показуємо повідомлення про успішну відправку
+    successMessage.classList.add("show");
 
     // Показуємо модальне вікно
     modal.classList.add("show");
 
-    // Закриваємо модальне вікно по кліку
+    // Закриття модального вікна по кліку на кнопку
     closeModalButton.addEventListener("click", function () {
       modal.classList.remove("show"); // Ховаємо модальне вікно
+      successMessage.classList.remove("show"); // Ховаємо успішне повідомлення
     });
 
-    // Через 4 секунди ховаємо повідомлення про успішну відправку
+    // Закриття модального вікна, якщо клікнути за межами вікна
+    modal.addEventListener("click", function (event) {
+      if (event.target === modal) {
+        modal.classList.remove("show"); // Ховаємо модальне вікно
+        successMessage.classList.remove("show"); // Ховаємо успішне повідомлення
+      }
+    });
+
+    // Через 4 секунди ховаємо повідомлення
     setTimeout(function () {
-      successMessageContainer.style.display = "none"; // Ховаємо повідомлення
-    }, 4000);
+      successMessage.classList.remove("show");
+    }, 4000); // 4 секунди, можна налаштувати по потребі
+
+    // Можна також очистити форму після успішної відправки
+    form.reset();
   });
 });
