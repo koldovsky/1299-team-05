@@ -107,20 +107,6 @@
   resize: none;
 }
 
-/* Підсвічування полів з помилками */
-.index-want__input.error,
-.index-want__textarea.error {
-  border: 1px solid red;
-  background-color: #fdd; /* Світло-червоний фон */
-}
-
-/* Підсвічування при фокусі на полях з помилками */
-.index-want__input.error:focus,
-.index-want__textarea.error:focus {
-  border-color: red;
-  background-color: #fbb; /* Темніший червоний фон при фокусі */
-}
-
 .index-want__button {
   width: 100%;
   padding: 15px;
@@ -139,6 +125,7 @@
   color: #000000;
 }
 
+/* Візуально приховані елементи, для доступності */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -148,6 +135,27 @@
   border: 0;
   clip: rect(0, 0, 0, 0);
   overflow: hidden;
+}
+
+/* Стиль для полів з помилками */
+.index-want__input.error,
+.index-want__textarea.error {
+  border: 2px solid red;
+}
+
+/* Можна додати також фонове забарвлення для підсвічування */
+.index-want__input.error::placeholder,
+.index-want__textarea.error::placeholder {
+  color: red;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: -10px;
+  margin-bottom: 15px;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
 }
 
 @media screen and (max-width: 768px) {
@@ -164,6 +172,77 @@
   }
 }
 
+/*#success-message {
+  display: block !important;
+  background-color: #d4edda; 
+  color: #155724; 
+  border: 1px solid #c3e6cb;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  animation: fadeIn 0.5s ease-in-out;
+}*/
+
+/* Стилі для модального вікна */
+#success-message {
+  display: none; /* Спочатку приховане */
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  transition: all 0.5s ease-in-out;
+}
+
+/* Модальне вікно, яке показується як звичайний блок */
+/* Модальне вікно */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Напівпрозорий фон */
+  display: none; /* Початково приховане */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+}
+
+.modal.show {
+  display: flex; /* Модальне вікно стане видимим */
+}
+
+.modal-close-btn {
+  background-color: #8c7568;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.modal-close-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
 @media screen and (max-width: 480px) {
   .index-want__title {
     font-size: 24px;
@@ -175,6 +254,6 @@
   }
 
   .index-want__button {
-    padding: 14px;
+    padding: 10px;
   }
 }
