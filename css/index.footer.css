@@ -13,9 +13,10 @@
 }
 
 .footer__info-container {
+  
   .footer__info-logo {
-    width: 350px;
-    height: 70px;
+    display: block;
+    width: 200px;
   }
 
   .footer__info-text {

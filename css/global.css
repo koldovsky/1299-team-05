@@ -26,37 +26,36 @@ img {
   display: block;
 }
 
+.section {
+  padding: 0 var(--ui-content-gutter-default);
+}
+
 @media (max-width: 1280px) {
   .section {
-    padding-left: var(--ui-content-gutter-1280);
-    padding-right: var(--ui-content-gutter-1280);
+    padding: 0 var(--ui-content-gutter-1280);
   }
 }
 
 @media (max-width: 992px) {
   .section {
-    padding-left: var(--ui-content-gutter-992);
-    padding-right: var(--ui-content-gutter-992);
+    padding: 0 var(--ui-content-gutter-992);
   }
 }
 
 @media (max-width: 768px) {
   .section {
-    padding-left: var(--ui-content-gutter-768);
-    padding-right: var(--ui-content-gutter-768);
+    padding: 0 var(--ui-content-gutter-768);
   }
 }
 
 @media (max-width: 480px) {
   .section {
-    padding-left: var(--ui-content-gutter-480);
-    padding-right: var(--ui-content-gutter-480);
+    padding: 0 var(--ui-content-gutter-480);
   }
 }
 
 @media (max-width: 320px) {
   .section {
-    padding-left: var(--ui-content-gutter-320);
-    padding-right: var(--ui-content-gutter-320);
+    padding: 0 var(--ui-content-gutter-320);
   }
 }

@@ -4,5 +4,9 @@
     --ui-content-gutter-768: 32px;
     --ui-content-gutter-992: 40px;
     --ui-content-gutter-1280: 15px;
-    --ui-content-gutter-default: 15px;
+    --ui-content-gutter-default: 351.5px;
+
+    --faq-arrow-up: &#10548;
+    --faq-arrow-down: &#10549;
+
 }
