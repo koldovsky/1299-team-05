@@ -69,26 +69,18 @@
   font-family: Roboto, sans-serif;
 }
 
+.index-want__wave {
+  text-align: center;
+  padding-top: 20px; /* Відступ зверху */
+  padding-bottom: 20px; /* Відступ знизу */
+}
+
 .index-want__subtitle {
   font-size: 16px;
   color: white;
   margin-bottom: 40px;
   font-family: "Open Sans";
   font-weight: bold;
-}
-
-.index-want__wave {
-  text-align: center;
-  padding: 10px;
-}
-
-.index-want__wave-image {
-  display: block;
-  position: relative;
-  width: 50%;
-  height: auto;
-  margin: 0 auto;
-  transition: none;
 }
 
 .index-want__label {
@@ -131,7 +123,6 @@
   color: #000000;
 }
 
-/* Візуально приховані елементи, для доступності */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -143,9 +134,8 @@
   overflow: hidden;
 }
 
-/* Модальне вікно, яке показується як звичайний блок */
 .modal {
-  display: none; /* За замовчуванням приховане */
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -157,69 +147,50 @@
 }
 
 .modal.show {
-  display: flex; /* Відображається після додавання класу .show */
-  animation: fadeIn 0.5s ease-in-out; /* Анімація появи */
-  background-color: rgba(255, 255, 255, 0.5); /* Напівпрозорий білий фон */
+  display: flex;
+  animation: fadeIn 0.5s ease-in-out;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
-/* Стилі для контенту в модальному вікні */
 .modal-content {
   background: #343436;
   padding: 20px;
-  text-align: center; /* Вирівнювання тексту по центру */
+  text-align: center;
   width: 100%;
-  max-width: 450px; /* Максимальна ширина контенту */
+  max-width: 450px;
   display: flex;
-  flex-direction: column; /* Вертикальне вирівнювання елементів */
+  flex-direction: column;
   justify-content: center;
-  align-items: center; /* По горизонталі */
-  min-width: 280px; /* Мінімальна ширина */
-  margin: 0 auto; /* Центрування по горизонталі */
-  padding: 43px 32px 65px; /* Внутрішні відступи */
-  border-radius: 3px; /* Округлення кутів */
-  animation: slideIn 0.5s ease-in-out; /* Додати анімацію для контенту */
+  align-items: center;
+  min-width: 280px;
+  margin: 0 auto;
+  padding: 43px 32px 65px;
+  border-radius: 3px;
+  animation: slideIn 0.5s ease-in-out;
 }
 
-/* Іконка в модальному вікні */
 .want-icon {
   width: 34px;
   height: 34px;
-  fill: #8c7568; /* Виправлений колір */
+  fill: #8c7568;
   display: block;
-  margin: 0 auto; /* Центрування по горизонталі */
+  margin: 0 auto;
 }
 
-/* Кнопка закриття */
 .modal-close-btn {
   background-color: #8c7568;
   border: none;
   color: #fff;
   padding: 10px 20px;
-  min-width: 200px; /* Ширина кнопки */
-  height: 30px; /* Висота кнопки */
+  min-width: 200px;
+  height: 30px;
   cursor: pointer;
-  font-size: 9px; /* Збільшено розмір шрифта для кнопки */
+  font-size: 9px;
   margin-top: 30px;
   display: flex;
-  justify-content: center; /* Центрування тексту по горизонталі */
-  align-items: center; /* Центрування тексту по вертикалі */
-  text-align: center; /* Центрування тексту в кнопці */
-}
-
-.modal-content p {
-  color: #ffffff; /* Білий колір для тексту */
-  font-size: 14px;
-  font-family: "Roboto", sans-serif;
-  margin-top: 30px; /* Відступ зверху */
-  margin-bottom: 10px; /* Відступ знизу */
-}
-
-.modal-content h2 {
-  color: #ffffff; /* Білий колір для тексту */
-  font-size: 11px;
-  font-family: "Open Sans", sans-serif;
-  margin-top: 10px; /* Відступ зверху */
-  margin-bottom: 15px; /* Відступ знизу */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .modal-close-btn:hover {
@@ -227,7 +198,22 @@
   color: #333;
 }
 
-/* Анімація появи для success-message */
+.modal-content p {
+  color: #ffffff;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.modal-content h2 {
+  color: #ffffff;
+  font-size: 11px;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -237,7 +223,6 @@
   }
 }
 
-/* Анімація для появи модального вікна */
 @keyframes slideIn {
   0% {
     transform: translateY(-20px);
@@ -249,19 +234,9 @@
   }
 }
 
-#success-message.show {
-  display: block;
-  animation: fadeIn 0.5s ease-in-out;
-}
-
-/* Медіа-запити для адаптації на мобільні пристрої */
 @media screen and (max-width: 768px) {
   .index-want__form {
     padding: 30px 20px;
-  }
-
-  .index-want__wave-image {
-    width: 60%;
   }
 
   .index-want__title {
@@ -269,12 +244,12 @@
   }
 
   .index-want__subtitle {
-    font-size: 14px; /* Зменшити розмір підзаголовку на мобільних */
+    font-size: 14px;
   }
 
   .index-want__input,
   .index-want__textarea {
-    font-size: 14px; /* Трохи збільшуємо розмір шрифта в полях */
+    font-size: 14px;
     padding: 12px 20px;
   }
 
@@ -285,21 +260,13 @@
   .modal-content {
     padding: 20px 15px;
     max-width: 90%;
-    min-width: 270px; /* Зменшена мінімальна ширина */
+    min-width: 270px;
   }
 
   .modal-close-btn {
     width: 100%;
     padding: 10px;
     font-size: 13px;
-  }
-
-  .modal-content h2 {
-    font-size: 9px;
-  }
-
-  .modal-content p {
-    font-size: 11px;
   }
 
   .want-icon {
@@ -316,7 +283,7 @@
   .index-want__input,
   .index-want__textarea {
     padding: 12px 20px;
-    font-size: 14px; /* Більший розмір шрифта для зручності на маленьких екранах */
+    font-size: 14px;
   }
 
   .index-want__button {
@@ -325,31 +292,19 @@
   }
 
   .index-want__subtitle {
-    font-size: 14px; /* Зменшити розмір підзаголовку */
-  }
-
-  .index-want__wave-image {
-    width: 70%; /* Збільшення ширини зображення на дуже маленьких екранах */
+    font-size: 14px;
   }
 
   .modal-content {
     padding: 20px 10px;
     max-width: 90%;
-    min-width: 250px; /* Для маленьких екранів */
+    min-width: 250px;
   }
 
   .modal-close-btn {
     width: 100%;
     padding: 10px;
     font-size: 13px;
-  }
-
-  .modal-content h2 {
-    font-size: 9px;
-  }
-
-  .modal-content p {
-    font-size: 11px;
   }
 
   .want-icon {
