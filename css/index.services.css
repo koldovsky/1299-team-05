@@ -10,7 +10,7 @@
   background-position: center;
   color: var(--services-primary-color);
   text-align: center;
-  min-height: 100vh;
+  min-height: 100%;
 }
 
 /* Заголовок секції */
