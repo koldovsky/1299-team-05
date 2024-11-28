@@ -43,4 +43,12 @@
   --footer-text-color: #969696;
   --footer-button-color: #8c7569;
 
+  /* index.events*/
+
+  --events-item-background: #343436;
+  --events-item-date-color: white;
+  --events-item-time-color: #96967d;
+  --events-item-button-color: white;
+  --events-item-button-border: #8c7569;
+  
 }

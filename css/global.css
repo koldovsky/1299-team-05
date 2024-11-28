@@ -27,7 +27,7 @@ img {
 }
 
 .section {
-  padding: 0 var(--ui-content-gutter-default);
+  padding: 0 20%;
 }
 
 @media (max-width: 1280px) {
@@ -59,3 +59,4 @@ img {
     padding: 0 var(--ui-content-gutter-320);
   }
 }
+
