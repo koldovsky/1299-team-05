@@ -16,7 +16,7 @@
 /* Заголовок секції */
 .index-services__title {
   font-size: 40px;
-  font-weight: bold;
+  font-weight: 1000;
   color: var(--services-primary-color);
   margin-bottom: 10px;
   font-family: "Roboto", sans-serif;

@@ -42,7 +42,7 @@
 /* Стилі для заголовку */
 .about__title {
   font-size: 38px;
-  font-weight: bold;
+  font-weight: 1000;
   margin-bottom: 10px;
   font-family: Roboto, sans-serif;
   color: var(--about-title-color1);
