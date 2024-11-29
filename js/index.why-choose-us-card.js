@@ -40,8 +40,8 @@ function renderCards(cards) {
             <p class="choose-us__card-description">${card.description}</p>
             <ul class="choose-us__list">
                     <li class="choose-us__list-item">${card.firstItem}</li>
-                    <li class="choose-us__list-item">${card.secondItemtItem}</li>
-                    <li class="choose-us__list-item">${card.thirdItemItem}</li>
+                    <li class="choose-us__list-item">${card.secondItem}</li>
+                    <li class="choose-us__list-item">${card.thirdItem}</li>
                 </ul>
      </div>`;
     }

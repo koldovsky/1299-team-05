@@ -35,10 +35,22 @@
   --subscribe-now-input-text-color: #3434361f;
   --subscribe-now-input-button-color: #4a4a4d;
   --subscribe-now-input-button-hover-color: #8c7568;
+  --subscribe-now-modal-window-background-color: rgba(0, 0, 0, 0.5);
 
   /*index.how-we-work.main.css */
 
   /*index.want-to-make-a-step-forwards*/
+
+  --want-bg-dark: #343436;
+  --want-bg-light: #8c7568;
+  --want-bg-overlay: rgba(0, 0, 0, 0.5);
+  --want-white: #ffffff;
+  --want-text-dark: #383839;
+  --want-text-light: #fff;
+  --want-text-muted: rgb(52, 52, 54);
+  --want-hover-bg: #fff;
+  --want-hover-text: #000000;
+  --want-icon: #8c7568;
 
   --footer-text-color: #969696;
   --footer-button-color: #8c7569;
@@ -50,5 +62,4 @@
   --events-item-time-color: #96967d;
   --events-item-button-color: white;
   --events-item-button-border: #8c7569;
-  
 }

@@ -16,19 +16,18 @@
   left: 0;
   overflow: hidden;
   z-index: 0;
-  background-color: transparent; /* Початково прозорий фон */
-  transition: background-color 0.3s ease; /* Плавна зміна кольору */
+  background-color: transparent;
+  transition: background-color 0.3s ease;
 }
 
-/* Фон з напівпрозорим чорним кольором, коли модальне вікно показано */
 .modal.show ~ .index-want__bg {
-  background-color: rgba(0, 0, 0, 0.5); /* Напівпрозорий чорний фон */
+  background-color: var(--want-bg-overlay);
 }
 
 .index-want__bg-image {
   background: url(../img/background/want-to-make-background.png) center / cover
       no-repeat,
-    rgb(52, 52, 54);
+    var(--want-text-muted);
   position: absolute;
   top: 0;
   right: 0;
@@ -47,7 +46,7 @@
 }
 
 .index-want__form {
-  background: #343436;
+  background: var(--want-bg-dark);
   width: 100%;
   max-width: 450px;
   min-height: 600px;
@@ -63,23 +62,23 @@
 
 .index-want__title {
   font-size: 40px;
-  color: white;
+  color: var(--want-white);
   font-weight: 700;
   margin-bottom: 20px;
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .index-want__wave {
   text-align: center;
-  padding-top: 20px; /* Відступ зверху */
-  padding-bottom: 20px; /* Відступ знизу */
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .index-want__subtitle {
   font-size: 16px;
-  color: white;
+  color: var(--want-white);
   margin-bottom: 40px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-weight: bold;
 }
 
@@ -87,7 +86,7 @@
   display: block;
   margin-bottom: 8px;
   font-size: 14px;
-  color: #fff;
+  color: var(--want-white);
   font-weight: bold;
 }
 
@@ -96,9 +95,9 @@
   width: 100%;
   padding: 15px 26px;
   margin-bottom: 20px;
-  background-color: #383839;
+  background-color: var(--want-text-dark);
   border: none;
-  color: #fff;
+  color: var(--want-white);
   font-size: 12px;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
@@ -108,9 +107,9 @@
 .index-want__button {
   width: 100%;
   padding: 15px;
-  background-color: #8c7568;
+  background-color: var(--want-bg-light);
   border: none;
-  color: #ffffff;
+  color: var(--want-white);
   font-size: 12px;
   cursor: pointer;
   margin-top: 36px;
@@ -119,8 +118,8 @@
 }
 
 .index-want__button:hover {
-  background-color: #fff;
-  color: #000000;
+  background-color: var(--want-hover-bg);
+  color: var(--want-hover-text);
 }
 
 .visually-hidden {
@@ -153,7 +152,7 @@
 }
 
 .modal-content {
-  background: #343436;
+  background: var(--want-bg-dark);
   padding: 20px;
   text-align: center;
   width: 100%;
@@ -172,15 +171,15 @@
 .want-icon {
   width: 34px;
   height: 34px;
-  fill: #8c7568;
+  fill: var(--want-icon);
   display: block;
   margin: 0 auto;
 }
 
 .modal-close-btn {
-  background-color: #8c7568;
+  background-color: var(--want-bg-light);
   border: none;
-  color: #fff;
+  color: var(--want-white);
   padding: 10px 20px;
   min-width: 200px;
   height: 30px;
@@ -194,12 +193,12 @@
 }
 
 .modal-close-btn:hover {
-  background-color: #fff;
+  background-color: var(--want-hover-bg);
   color: #333;
 }
 
 .modal-content p {
-  color: #ffffff;
+  color: var(--want-white);
   font-size: 14px;
   font-family: "Roboto", sans-serif;
   margin-top: 30px;
@@ -207,7 +206,7 @@
 }
 
 .modal-content h2 {
-  color: #ffffff;
+  color: var(--want-white);
   font-size: 11px;
   font-family: "Open Sans", sans-serif;
   margin-top: 10px;

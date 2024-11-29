@@ -16,6 +16,22 @@
   margin: 20px;
 }
 
+.item1 {
+  background-image: url("../img/index.events/events-the-impact.jfif");
+}
+
+.item2 {
+  background-image: url("../img/index.events/events-the-impact.jfif");
+}
+
+.item3 {
+  background-image: url("../img/index.events/events-the-impact.jfif");
+}
+
+.item4 {
+  background-image: url("../img/index.events/events-the-impact.jfif");
+}
+
 .index-events__footer {
     width: 117px;
     height: 50px;
@@ -42,8 +58,7 @@
         color: var(--events-item-button-color);
     }
 }
+
 @media (max-width: 768px) {
-  .index-events__container {
-    grid-template-columns: 1fr;
-  }
 }
+
