@@ -27,6 +27,7 @@
   --services-background-color: #000000; 
   --services-button-border-color: #8c7569; 
   --services-button-hover-color: #8c7569; 
+  
   /*index.subscribe-now.css */
 
   --subscribe-now-form-color: #ffffff;
@@ -35,6 +36,7 @@
   --subscribe-now-input-text-color: #3434361f;
   --subscribe-now-input-button-color: #4a4a4d;
   --subscribe-now-input-button-hover-color: #8c7568;
+  --subscribe-now-modal-window-background-color: rgba(0, 0, 0, 0.5);
 
   /*index.how-we-work.main.css */
 
