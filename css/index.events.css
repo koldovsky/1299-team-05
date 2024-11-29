@@ -14,64 +14,6 @@
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   margin: 20px;
-
-  .index-events__item {
-    position: relative;
-    overflow: hidden;
-    min-width: 300px;
-    height: 410px;
-
-    .index-events__item-image {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-
-    .index-events__item-text {
-      position: absolute;
-      top: 0;
-      right: 0;
-      height: 100%;
-      width: 50%;
-      background-color: var(--events-item-background);
-      padding: 25px;
-      box-sizing: border-box;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-
-      .index-events__item-date {
-        font-size: 16px;
-        color: var(--events-item-date-color);
-      }
-
-      .index-events__item-time {
-        padding-top: 30px;
-        font-size: 14px;
-        color: var(--events-item-time-color);
-      }
-
-      .index-events__item-title {
-        font-size: 30px;
-        margin-top: 10px;
-        color: var(--events-item-date-color);
-        margin: 90px 0 70px 0;
-      }
-
-      .index-events__item-link {
-        color: var(--events-item-date-color);
-        margin-top: 15px;
-      }
-
-      .index-events__item-link:hover {
-        color: var(--header-hover-link-color);
-        align-self: flex-end;
-      }
-    }
-  }
 }
 
 .index-events__footer {
