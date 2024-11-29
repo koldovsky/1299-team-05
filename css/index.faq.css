@@ -85,3 +85,9 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .index-faq__accordion-container {
+    grid-template-columns: 1fr;
+  }
+}

@@ -16,7 +16,7 @@
   
   .footer__info-logo {
     display: block;
-    width: 200px;
+    max-width: 200px;
   }
 
   .footer__info-text {
@@ -86,7 +86,7 @@
     padding: 20px 0 0 0;
     text-align: left;
     .footer__form-edit {
-      width: 100%;
+      width: 80%;
       height: 50px;
       margin-bottom: 20px;
       background-color: var(--footer-button-color);
@@ -97,7 +97,7 @@
         text-align: center;
     }
     .footer__form-button {
-      width: 100%;
+      width: 80%;
       height: 50px;
       background-color: var(--footer-button-color);
       font-family: "Roboto";
@@ -144,6 +144,12 @@
     justify-content: center;
     text-align: center;
   }
+
+  .footer__info-logo {
+    display: block;
+    width: calc(max-width * 0.8)px;
+  }
+
   .footer__info-text {
     text-align: center;
   }
