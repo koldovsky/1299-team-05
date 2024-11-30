@@ -60,6 +60,9 @@
   --events-item-background: #343436;
   --events-item-date-color: white;
   --events-item-time-color: #96967d;
+  --events-item-title-color: white;
+  --events-item-link-color: white;
+  --events-item-link-hover-color: #96967d;
   --events-item-button-color: white;
   --events-item-button-border: #8c7569;
 }

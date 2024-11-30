@@ -40,3 +40,4 @@ function lovefunc(flower1, flower2){
   let checkFlower2 = (flower2 % 2) === 0;
   return ((checkFlower1 && !checkFlower2) || (!checkFlower1 && checkFlower2))
 }
+
