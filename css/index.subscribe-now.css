@@ -65,6 +65,7 @@
 }
 
 .subscribe__description {
+  line-break: anywhere;
   font-size: 18px;
   margin-top: 45px;
 }

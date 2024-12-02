@@ -1,119 +1,122 @@
-/* General section styling */
 .how-we-work {
-    position: relative;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 50px;
-    background-color: #f9f9f9;
-    overflow: hidden; /* Ensures the image stays within bounds */
+  background-image: url(../img/background/how-we-work-background.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 80vh;
 }
+
+
+.how-we-work__wrapper {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 80px 15px 80px 15px;
+}
+
+@media (max-width: 992px) {
+  .how-we-work__wrapper {
+    grid-template-columns: 70% 30%;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .how-we-work__wrapper {
+    grid-template-columns: 90% 10%;
+  }
+}
+
 
 .how-we-work__left {
-    position: relative;
-    flex: 1;
-    max-width: 60%;
-    z-index: 2; /* Ensure this content stays above the image */
-    background: rgba(255, 255, 255, 0.9); /* Optional: Add a semi-transparent background */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
 
 .how-we-work__right {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 40%; /* Image starts behind the right side of the content */
-    z-index: 1;
-    overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.how-we-work__right img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: auto;
-    opacity: 0.3; /* Optional: Fade the background image */
-}
-
-/* Header Styling */
 .how-we-work__header {
-    margin-bottom: 30px;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
 }
 
-.how-we-work__title {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 10px;
+.how-we-work__dot {
+  font-family: "Roboto";
+  font-size: 50px;
+  border-radius: 50%;
+  display: inline-block;
+  color: var(--how-we-work-dot-color);
 }
 
-.how-we-work__icon {
-    display: block;
-    margin: 0 auto 15px auto;
-}
 
-.how-we-work__description {
-    font-size: 1rem;
-    color: #666;
-    line-height: 1.6;
-    text-align: justify;
-}
-
-/* Steps styling */
 .how-we-work__step {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 50px;
 }
 
-.how-we-work__image {
-    flex-shrink: 0;
-    margin-right: 15px;
-}
-
-.how-we-work__image-icon {
-    width: 50px;
-    height: 50px;
-    object-fit: contain;
-}
-
-.how-we-work__item {
-    flex: 1;
-}
 
 .how-we-work__step-title {
-    font-size: 1.2rem;
-    color: #444;
-    margin-bottom: 5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
 }
+
 
 .how-we-work__step-description {
-    font-size: 1rem;
-    color: #666;
-    line-height: 1.4;
+  color: var(--how-we-work-descroption-font-color);
+  font-family: "Open Sans", sans-serif;
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 1.8;
+  line-break: anywhere;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .how-we-work {
-        padding: 20px;
-    }
 
-    .how-we-work__left {
-        max-width: 100%;
-        margin: 0 auto;
-    }
+.how-we-work__icon {
+  display: block;
+  width: 65px;
+  height: 30px;
+}
 
-    .how-we-work__right {
-        left: 0; /* Ensure it fully spans the background */
-        opacity: 0.2; /* Reduce visibility further for smaller screens */
-    }
 
-    .how-we-work__right img {
-        width: 150%; /* Make the image larger to ensure it fills the background */
-    }
+.how-we-work__title {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+
+.how-we-work__image {
+  margin-right: 30px;
+
+}
+
+
+.how-we-work__image-icon {
+  background-color: var(--how-we-work-icon-backgroung);
+  border-radius: 16px;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 40px;
+}
+
+
+.how-we-work__description {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.8;
+  margin-top: 20px;
+  font-size: 18px;
 }
