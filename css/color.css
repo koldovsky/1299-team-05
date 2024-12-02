@@ -13,6 +13,7 @@
   --tertiary-color: #7d7d7d;
   --background-color: #ffffff;
   --hover-background-color: #343436;
+  --about-icon-color: #969696;
 
   /*index.why-choose-us.css */
 
@@ -23,10 +24,10 @@
 
   /*index.services.css */
   --services-primary-color: #ffffff;
-  --services-secondary-color: #8c7569;  
-  --services-background-color: #000000; 
-  --services-button-border-color: #8c7569; 
-  --services-button-hover-color: #8c7569; 
+  --services-secondary-color: #8c7569;
+  --services-background-color: #000000;
+  --services-button-border-color: #8c7569;
+  --services-button-hover-color: #8c7569;
   /*index.subscribe-now.css */
 
   --subscribe-now-form-color: #ffffff;
@@ -65,4 +66,12 @@
   --events-item-link-hover-color: #96967d;
   --events-item-button-color: white;
   --events-item-button-border: #8c7569;
+
+  /*index-careers*/
+
+    --careers-background-color: #f7f5f5;
+    --careers-text-color: #4a4a4d;
+    --careers-link-color: #7d7d7d;
+    --careers-primary-color: #8c7568;
+    --careers-hover-color: #96967d;
 }

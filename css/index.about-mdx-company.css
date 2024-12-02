@@ -74,7 +74,7 @@
   color: var(--tertiary-color);
 }
 
-/* Соціальні іконки */
+/* Соціальні іконки*/
 .about__socials {
   display: inline-flex;
   flex-direction: row;
@@ -97,7 +97,7 @@
   }
 
   .about__socials-link:hover svg.about__socials-icon {
-    fill: var(--primary-color);
+    fill: var(--about-icon-color);
   }
 }
 
@@ -108,7 +108,7 @@
 /* Кнопки */
 .about-buttons {
   display: flex;
-  justify-content: flex-start;  /* Вирівнюємо кнопки по лівій стороні */
+  justify-content: flex-start; /* Вирівнюємо кнопки по лівій стороні */
   gap: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -117,8 +117,8 @@
 
 /* Фіксовані розміри для кнопок */
 .about__button {
-  width: 115px;  /* Фіксована ширина */
-  height: 40px;  /* Фіксована висота */
+  width: 115px; /* Фіксована ширина */
+  height: 40px; /* Фіксована висота */
   font-weight: bold;
   display: flex;
   align-items: center;
@@ -158,6 +158,9 @@
 
 /* Адаптивність для малих екранів */
 @media (max-width: 924px) {
+  .section {
+    padding: 0 var(--ui-content-gutter-992);
+  }
   .about-section {
     grid-template-columns: 1fr; /* Один стовпець для малих екранів */
     padding: 60px 15px;
@@ -200,17 +203,19 @@
 
   /* Фіксовані розміри кнопок */
   .about__button {
-    width: 115px;  /* Фіксована ширина */
-    height: 35px;  /* Фіксована висота */
+    width: 115px; /* Фіксована ширина */
+    height: 35px; /* Фіксована висота */
   }
 }
 
 /* Для дуже маленьких екранів (як телефони) */
 @media (max-width: 480px) {
+  .section {
+    padding: 0 var(--ui-content-gutter-480);
+  }
   .about-section {
     padding: 40px 10px;
   }
-
   .about__title {
     font-size: 24px;
   }
@@ -225,13 +230,13 @@
 
   .about-buttons {
     gap: 15px;
-    flex-direction: column;  /* Кнопки стають одна під одну */
-    justify-content: flex-start;  /* Вирівнюємо кнопки по лівій стороні */
-    align-items: flex-start;  /* Вирівнюємо кнопки по лівій стороні */
+    flex-direction: column; /* Кнопки стають одна під одну */
+    justify-content: flex-start; /* Вирівнюємо кнопки по лівій стороні */
+    align-items: flex-start; /* Вирівнюємо кнопки по лівій стороні */
   }
 
   .about__button {
-    width: 115px;  /* Фіксована ширина */
-    height: 35px;  /* Зменшена висота для маленьких екранів */
+    width: 115px; /* Фіксована ширина */
+    height: 35px; /* Зменшена висота для маленьких екранів */
   }
 }

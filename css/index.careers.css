@@ -1,13 +1,15 @@
+/* Основний контейнер */
 .index-careers {
   background-image: url("../img/careers/careers.bg.png");
   padding-top: 70px;
   padding-bottom: 100px;
 }
 
+/* Картка */
 .index-careers__card {
-  background-color: #f7f5f5;
+  background-color: var(--careers-background-color);
   display: flex;
-  justify-content: space-between; /* Відстань між елементами */
+  justify-content: space-between;
   align-items: center;
   padding: 20px;
   width: 60%;
@@ -16,15 +18,17 @@
   margin-bottom: 20px;
 }
 
+/* Заголовок */
 .index-careers__title {
   text-align: center;
   margin-bottom: 20px;
   font-size: 50px;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  color: #4a4a4d;
+  color: var(--careers-text-color);
 }
 
+/* Зигзаг */
 .careers-zigzag {
   display: block;
   margin: 20px auto;
@@ -32,49 +36,51 @@
   height: auto;
 }
 
+/* Опис */
 .index-careers__description {
   text-align: center;
   font-size: 14.5px;
   line-height: 1.6;
-  max-width: 800px;
+  max-width: 600px;
   margin: 20px auto;
   margin-bottom: 40px;
-  color: #4a4a4d;
+  color: var(--careers-text-color);
   font-family: "Open Sans";
-  font-weight: 500; /* Текст стане трохи жирним */
+  font-weight: 500;
 }
 
+/* Точка в заголовку */
 .index-careers__title-dot {
   font-size: 2.5rem;
   font-family: Roboto;
-  color: #8c7568;
+  color: var(--careers-primary-color);
 }
 
 /* Для зображення */
 .index-careers__card img {
-  width: 60px; /* Ширина зображення для десктопної версії */
-  height: auto; /* Автоматична висота для збереження пропорцій */
+  width: 60px;
+  height: auto;
 }
 
 /* Текстові елементи */
 .container-span {
   display: flex;
-  justify-content: space-between; /* Відстань між елементами */
-  width: 100%; /* Забезпечуємо, щоб контейнер заповнював доступний простір */
-  gap: 15px; /* Відступи між елементами */
+  justify-content: space-between;
+  width: 100%;
+  gap: 15px;
 }
 
 .container-span span {
   text-align: left;
-  color: #7d7d7d;
+  color: var(--careers-link-color);
   font-size: 14px;
   margin-left: 10px;
 }
 
 /* Стилі для посилання */
 .index-careers__card a {
-  text-decoration: none; /* Без підкреслення для посилання */
-  color: #7d7d7d;
+  text-decoration: none;
+  color: var(--careers-link-color);
   font-size: 14px;
   margin-left: 10px;
 }
@@ -82,40 +88,40 @@
 /* Мобільна версія */
 @media (max-width: 768px) {
   .index-careers__card {
-    flex-direction: column; /* На мобільних пристроях елементи йдуть вертикально */
-    align-items: flex-start; /* Вирівнюємо елементи по лівому краю */
-    padding: 40px; /* Збільшити відступи всередині картки */
-    margin-left: 20px; /* Вирівнюємо картку по лівому краю */
-    margin-right: 20px; /* Додаємо відступ з правого боку */
-    margin-bottom: 40px; /* Збільшити відступ між картками */
-    width: auto; /* Дозволяємо картці адаптувати свою ширину */
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    width: auto;
   }
 
   .index-careers__card img {
-    width: 40px; /* Зменшуємо розмір зображення до 40px на мобільних пристроях */
-    margin-right: 0; /* Відміняємо відступ справа */
-    margin-bottom: 30px; /* Збільшуємо відступ між зображенням і текстом */
+    width: 40px;
+    margin-right: 0;
+    margin-bottom: 30px;
   }
 
   .index-careers__card span {
-    padding: 15px 0; /* Збільшити відступи для кожного текстового елемента */
+    padding: 15px 0;
   }
 
   .index-careers__description {
-    margin: 40px auto; /* Збільшити відступи для опису */
-    font-size: 16px; /* Трохи збільшуємо розмір шрифта для зручності на маленьких екранах */
-    text-align: center; /* Повертаємо вирівнювання по центру */
+    font-size: 16px;
+    margin: 20px 15px;
+    padding: 0 15px;
+    text-align: center;
   }
 
   .index-careers__title {
-    font-size: 45px; /* Зменшуємо розмір заголовка для мобільних */
-    margin-bottom: 30px; /* Збільшити відступи між заголовком і контентом */
-    text-align: center; /* Повертаємо вирівнювання по центру */
+    font-size: 45px;
+    margin-bottom: 30px;
+    text-align: center;
   }
 
-  /* Збільшення відступів для посилань */
   .index-careers__card a {
-    padding: 15px 0; /* Додати відступи зверху та знизу для посилань */
-    text-align: left; /* Вирівнювання посилань по лівому краю */
+    padding: 15px 0;
+    text-align: left;
   }
 }
